@@ -1,0 +1,119 @@
+.bg-signup{
+    width: 1520px;
+    height: 804px;
+    margin: 0;
+    background-color: #2F3436;
+    position: relative;
+}
+.bg-signup-item{
+    width: 1169px;
+    height: 697px;
+    margin: 54px 176px;
+    position: absolute;
+    background-color: #171B1D;
+    display: flex;
+    
+
+}
+/* .left-signup img{
+    width: 469px;
+    height: 697px;
+    object-fit: cover;
+} */
+
+.left-signup{
+    background-image: url('../images/bag.png');
+    background-repeat: no-repeat;
+    width: 469px;
+    height: 697px;
+    object-fit: cover;
+    
+}
+
+
+.logo{
+    width: 77px;
+    height: 36px;
+    object-fit: cover;
+    margin-left: 61px;
+    margin-top: 115px;
+    z-index: 1;
+}
+
+.form-signup{
+    width: 568.7px;
+    height: 463.39px;
+}
+.close-box{
+    border: 1px solid;
+    width: 45px;
+    height: 45px;
+    background-color: #707070;
+    font-size: 35px;
+    float: right;
+    text-align: center;
+}
+.sign-up-text {
+    display: flex;
+    margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    color: white;
+}
+.sign-up{
+    margin-left: 61px;
+    padding-right: 50px;
+}
+.sign-in{
+    width: 76px;
+    height: 33px;  
+    color: darkgrey;  
+}
+.about-terms-contact{
+    width: auto;
+    height: 16px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 99.8px;
+    margin-top: 420px;
+    color: #6D767A;
+}
+.form-text{
+    color: white;
+}
+
+.form-signup{
+    width: 568.7px;
+    height: 463.39px;
+    margin-top: 180.6px;
+    margin-left: 60px;
+   
+
+}
+.text-title{
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    width: auto;
+    height: 16px;
+    margin: 20px 0;
+    letter-spacing: 3px;
+}
+.text-input{
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    color: #FEBF34;
+    font-weight: bold;
+    background: none;
+    border: none;
+}
+.btn-signup{
+    background-color: none;
+    border: 1px solid #FEBF34;
+    border-radius: 30px;
+    background: 10%;
+    color: #FEBF34;
+    font-weight: bold;
+    float: right;
+    font-size: 30px;
+    margin-top: 30px;
+    padding: 10px 20px;
+}
