@@ -1,7 +1,6 @@
 .bg-signup{
     width: 1520px;
     height: 804px;
-    margin: 0;
     background-color: #2F3436;
     position: relative;
 }
@@ -29,8 +28,6 @@
     object-fit: cover;
     
 }
-
-
 .logo{
     width: 77px;
     height: 36px;
@@ -52,6 +49,7 @@
     font-size: 35px;
     float: right;
     text-align: center;
+    margin-left: 655px;
 }
 .sign-up-text {
     display: flex;
@@ -104,6 +102,7 @@
     font-weight: bold;
     background: none;
     border: none;
+    width: 100%;
 }
 .btn-signup{
     background-color: none;
@@ -113,7 +112,7 @@
     color: #FEBF34;
     font-weight: bold;
     float: right;
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 30px;
-    padding: 10px 20px;
+    padding: 10px 40px;
 }
