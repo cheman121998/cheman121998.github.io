@@ -2,18 +2,18 @@ body{
     margin: 0;
 }
 .container{
+    width: 1520px;
     height: 804px;
     background-color: #2F3436;
     position: relative;
 }
 .canvas {
+    width: 1168px;
     height: 698px;
     background-color: #171B1D;
-    display: flex;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    margin: 54px 176px;
+    display: flex;
 }
 .left-side{
     width: 468px;
@@ -21,31 +21,26 @@ body{
     background-image: url('../images/Clip.png');
 }
 .logo{
+ 
     width: 76px;
     height: 36px;
     margin: 62px 0 0 62px;
 }
 .title {
+    width: 196px;
     height: 32px;
     margin-top: 26px;
     margin-left: 60px;
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
-   
-    
-}
-.signup{
-    background: none;
-    border: none;
     color: #9EA9AE;
 }
 .signin{
     color: #707070;
     margin-left: 32px;
-    background: none;
-    border: none;
 }
 .link{
+    width: 146px;
     height: 16px;
     position: absolute;
     top: 624px;
@@ -64,8 +59,6 @@ body{
     right: 0;
     background-color: #202426;
 }
-.close:hover {background: #bbb;}
-
 .close img{
     height: 16px;
     width: 16px;
@@ -74,10 +67,10 @@ body{
     top: 35%;
 }
 .form{
+    width: 568px;
     height: 464px;
     margin-top: 116px;
     margin-left: 70px; 
-    position: relative;
 }
 .form-group{
     width: 568px;
@@ -87,7 +80,8 @@ body{
     background-color: none;
     border-bottom: 1px solid #707070;
 }
-.text-title{    
+.text-title{
+    width: auto;
     height: 16px;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
@@ -112,8 +106,7 @@ body{
 }
 .btn-signup{
     font-family: 'Raleway', sans-serif;
-    height: 50px;
-    width: 214px;
+    padding: 16px 68px;
     font-size: 15px;
     font-weight: bold;
     border: 2px solid  #FEBF34;
