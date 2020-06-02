@@ -124,3 +124,6 @@ body{
     bottom: 0;
     right: 0;
 }
+.btn-signup:hover {background: rgb(245, 243, 243);}
+.signup:hover {background: rgb(248, 222, 222);}
+.signin:hover {background: rgb(248, 222, 222);}
