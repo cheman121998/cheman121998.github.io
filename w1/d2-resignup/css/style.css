@@ -30,20 +30,21 @@ body{
     margin-top: 26px;
     margin-left: 60px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 24px;
-   
+    
     
 }
 .signup{
     background: none;
     border: none;
     color: #9EA9AE;
+    font-size: 24px;
 }
 .signin{
     color: #707070;
     margin-left: 32px;
     background: none;
     border: none;
+    font-size: 24px;
 }
 .link{
     height: 16px;
@@ -75,12 +76,11 @@ body{
 }
 .form{
     height: 464px;
-    margin-top: 116px;
-    margin-left: 70px; 
+    top: 116px;
     position: relative;
+    padding: 0 62px;
 }
 .form-group{
-    width: 568px;
     height: 64px;
     margin-top: 28px;
     display: grid;
@@ -122,8 +122,14 @@ body{
     color:  #FEBF34;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 62px;
 }
-.btn-signup:hover {background: rgb(245, 243, 243);}
-.signup:hover {background: rgb(248, 222, 222);}
-.signin:hover {background: rgb(248, 222, 222);}
+.btn-signup:hover {background: rgb(245, 243, 243);
+    cursor: pointer;
+}
+.signup:hover {background: rgb(248, 222, 222);
+    cursor: pointer;
+}
+.signin:hover {background: rgb(248, 222, 222);
+    cursor: pointer;
+}
