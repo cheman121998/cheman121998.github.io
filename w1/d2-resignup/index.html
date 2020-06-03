@@ -24,30 +24,61 @@
                 </div>
                 <form class="form" action="/" method="post">
                     <div class="form-group">
-                        <label class="text-title"  for="username">YOUR USERNAME</label>
-                        <input class="input-box" type="username" placeholder="Type your username here">
-                    </div>
-                  
+                        <label class="text-title" for="username">YOUR USERNAME</label>
+                        <input class="input-box" onchange="handleChange('username')" id="username" placeholder="Type your username here">
+                    </div> 
+                                     
                     <div class="form-group">
-                        <label class="text-title" for="username">YOUR EMAIL</label>
-                        <input class="input-box" type="email" placeholder="Type your email here">
+                        <label class="text-title" for="email">YOUR EMAIL</label>
+                        <input class="input-box" id="email" placeholder="Type your email here">
                     </div>
                    
                     <div class="form-group">
                         <label class="text-title" for="password">YOUR PASSWORD</label>
-                        <input class="input-box" type="password" placeholder="Type your password here">
+                        <input class="input-box" id="password" placeholder="Type your password here">
                     </div>
                    
                     <div class="form-group">
-                        <label class="text-title" for="password">REPREAT YOUR PASSWORD</label>
-                        <input class="input-box" type="repassword" placeholder="Type your password here">
+                        <label class="text-title" for="repassword">REPREAT YOUR PASSWORD</label>
+                        <input class="input-box" id="repassword" placeholder="Type your password here">
                     </div>
                     <button class="btn-signup">SIGN UP</button>
                 </form>
             </div>
         </div>
     </div>
-    <script>
+    <!-- <script>
+        const user = {username: {value: '', isDataValid: false}, 
+        email: {value: '', isDataValid: false}, password: {value: '', isDataValid: false},
+        repassword: {value: '', isDataValid: false}};
+
+        const usernameElement = document.getElementById('username');
+        const emailElement = document.getElementById('email');
+        const passwordElement = document.getElementById('password');
+        const rePasswordElement = document.getElementById('repassword');
+
+        usernameElement.addEventListener('change', function(e){
+            const value = e.target.value;
+            handleChange('username', value)
+        })
+        emailElement.addEventListener('change', function(e){
+            const value = e.target.value;
+            handleChange('email', value)
+        })
+        passwordElement.addEventListener('change', function(e){
+            const value = e.target.value;
+            handleChange('password', value)
+        })
+        rePasswordElement.addEventListener('change', function(e){
+            const value = e.target.value;
+            handleChange('repassword', value)
+        })
+
+        function handleChange(key, value) {
+            
+        console.log('key', key)
+        console.log('value', value)
+        }
         var closebtns = document.getElementsByClassName("close");
         var i;
 
@@ -56,6 +87,6 @@
         this.parentElement.style.display = 'none';
         });
     }
-    </script>
+    </script> -->
 </body>
 </html>

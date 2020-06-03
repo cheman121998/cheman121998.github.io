@@ -71,8 +71,9 @@ body{
     height: 16px;
     width: 16px;
     position: absolute;
-    left: 35%;
-    top: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .form{
     height: 464px;
@@ -109,6 +110,10 @@ body{
     background: none;
     border: none;
     color: #FEBF34;
+    outline: unset;
+}
+.input-box:hover{
+    border: none;
 }
 .btn-signup{
     font-family: 'Raleway', sans-serif;
