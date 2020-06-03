@@ -1,0 +1,114 @@
+@font-face {
+    font-family:font_strong;
+    src:url('../fonts/FontsFree-Net-proxima_nova_reg-webfont.ttf') format('truetype'),
+    url('../fonts/FontsFree-Net-Proxima-Nova-Bold.otf') format('embedded-opentype');
+  
+    font-weight:normal;
+    font-style:normal;
+   }
+
+
+
+body{
+    margin: 0;
+}
+.container{
+    background-color: #EEEEEE;
+    height: 1276px;
+    position: relative;
+}
+
+
+.sign-up{
+    background-color: #ffffff;
+    height: 940px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow:  0 15px 45px #707070;
+}
+
+label.title-signup {
+    height: 68px;
+    font-size: 52px;
+    color: #000000;
+    font-family: font_strong;
+    margin-bottom: 64px;
+}
+.form{
+    padding: 60px;
+}
+.form-group{
+    display: grid;
+    height: 104px;
+    margin-bottom: 28px;
+}
+.form-group:first-child{
+    margin-top: 64px;
+}
+.input-box{
+    border: none;
+    height: 60px;
+    border-bottom: 1px solid #F1F1F1;
+    outline: none;
+    font-family: font_strong;
+    font-size: 45px;
+}
+.input-box:hover{
+    color: #000000;
+}
+.title-box:hover{
+    color: #000000;
+}
+::placeholder{
+    font-size: 20px;
+}
+.title-box{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    height: 28px;
+    font-family: 'Roboto', sans-serif;
+    color: #B0B0B0;
+}
+.validate{
+    height: 44px;
+    font-size: 25px;
+    font-family: font_strong;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.validate img{
+    height: 45px;
+    width: 45px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.btn-signup{
+    height: 76px;
+    padding: 0 96px;
+    background: black;
+    color: white;
+    margin-top: 55px;
+    font-size: 27px;
+    font-family: font_strong;
+    cursor: pointer;
+}
+.group-signin{
+    margin-top: 48px;
+    height: 72px;
+}
+.text-already{
+    color: #ABABAB;
+    font-family: font_strong;
+    font-size: 25px;
+}
+.sign-in{
+   text-decoration: none;
+   font-family: font_strong;
+   font-size: 27px;
+   color: #000000;
+}
