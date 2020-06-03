@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.container{
+    background-color: #ead6d6;
+    height: 620px;
+    color: #FFFFFF;
+}
+.sign-in{
+    height: 420px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F76C6C;
+    padding: 60px;
+}
+.title{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.slogan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.form{
+    height: 572px;
+    margin-top: 50px;
+}
+.form-group{
+    height: 80px;
+}
+.form-title{
+    font-size: 10px;
+    margin: 0 auto;
+
+}
+.form-input{
+    outline: none;
+    border: none;
+    background: none;
+    color: #ffffff;
+    font-size: 22px;
+}
+.form-group img{
+    width: 13px;
+    height: 13px;
+    object-fit: cover;
+    margin-right: 5px;
+}
+.input-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid;
+    padding: 10px 0 6px 0;
+   
+}
+::placeholder{
+    color: #FFFFFF;
+    font-size: 12px;
+}
+.check-group{
+    display: flex;
+    justify-content: space-between;
+}
+.remember-me{
+    display: flex;
+}
+.remember-me img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.check-group a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.form button{
+    height: 60px;
+    background-color: #FFFFFF;
+    width: 100%;
+    color: #F76C6C;
+    margin-top: 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+a {
+    color: #FFFFFF;
+}
+.link-signup{
+    margin-top: 30px;
+    text-align: center;
+}
