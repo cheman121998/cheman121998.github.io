@@ -33,8 +33,7 @@ body{
     letter-spacing: 1px;
 }
 .form{
-    height: 572px;
-    margin-top: 50px;
+      margin-top: 50px;
 }
 .form-group{
     height: 80px;
@@ -65,7 +64,7 @@ body{
     padding: 10px 0 6px 0;
    
 }
-::placeholder{
+.form-input::placeholder{
     color: #FFFFFF;
     font-size: 12px;
 }
@@ -102,4 +101,80 @@ a {
 .link-signup{
     margin-top: 30px;
     text-align: center;
+}
+
+/* End style Sign In */
+
+/* Start Style style up */
+#sign-up{
+    height: 520px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.header{
+    background-color: #F76C6C;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding-left: 40px;
+    color: #FFFFFF;
+}
+.body{
+    padding: 0 60px;
+}
+#sign-up .form{
+    height: 572px;
+    margin-top: 10px;
+}
+#sign-up .form-group{
+    height: 65px;
+}
+#sign-up .form-title{
+    font-size: 10px;
+    margin: 0 auto;
+
+}
+#sign-up .form-input-signup{
+    outline: none;
+    border: none;
+    background: none;
+    color: #000000;
+    font-size: 22px;
+}
+#sign-up .input-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #B8B8B8;
+    padding: 10px 0 6px 0;
+   
+}
+.form-input-signup::placeholder{
+    color: #000000;
+    font-size: 12px;
+}
+#sign-up .form button{
+    height: 35px;
+    background-color: #F76C6C;
+    width: 100%;
+    color: #FFFFFF;
+    margin-top: 30px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+a:hover{
+    opacity: 0.2;
+}
+#sign-up a{
+    color: #000000;
 }

@@ -110,3 +110,9 @@ label.title-signup {
    font-size: 27px;
    color: #000000;
 }
+button:hover{
+    opacity: 0.8;
+}
+a:hover{
+    opacity: 0.4;
+}
