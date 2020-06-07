@@ -15,21 +15,26 @@
             <form action="/" class="form" method="post">
                 <label for="sign-up" class="title-signup">Sign Up</label>
                 <div class="form-group">
-                    <input class="input-box" type="text" id="username" placeholder="Type your username here">
+                    <input class="input-box" type="text" id="username" required placeholder="Type your username here">
                     <label class="title-box" for="username">username</label>
                 </div>
                 <div class="form-group">
-                    <input class="input-box" type="text" id="email" placeholder="Type your email here">
+                    <input class="input-box" type="text" id="email" required placeholder="Type your email here">
                     <label class="title-box" for="email">email</label>
                 </div>
                 <div class="form-group">
-                    <input class="input-box" type="password" id="pass" placeholder="Type your password here">
+                    <input class="input-box" type="password" id="pass" required placeholder="Type your password here">
                     <label class="title-box" for="pass">password</label>
                 </div>
-                <div class="validate">
+                <!-- <div class="validate">
                     <input class="check-box" type="checkbox" checked="checked" style="display: none;">
                     <img src="./images/Checkbox.png" alt="validate images">
                     <span>Please send me weekly updates.</span>
+                </div> -->
+                <div class="validate">
+                    <input id="validate" class="input-checkbox" type="checkbox" checked="checked" style="display: none;">
+                    <!-- <img src="./images/Checkbox.png" alt="validate images"> -->
+                    <label class="label-checkbox" for="validate">Please send me weekly updates.</label>
                 </div>
                 <div style="text-align: center;">
                     <button type="submit" class="btn-signup" style="display: inline-block;">SIGN UP</button>

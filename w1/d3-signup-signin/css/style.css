@@ -52,7 +52,6 @@ body{
 }
 .form-group img{
     width: 13px;
-    height: 13px;
     object-fit: cover;
     margin-right: 5px;
 }

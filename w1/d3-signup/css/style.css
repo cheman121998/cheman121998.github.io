@@ -116,15 +116,49 @@
         opacity: 0.4;
     }
 
-
+/* 
     .check-box{
         height: 10px;
         widows: auto;
         background-color: aquamarine;
         border-radius: 25%;;
+    } */
+
+    input:focus + label {
+        font-weight: bold;
+        color: black;
     }
 
     input:focus + label {
         font-weight: bold;
         color: black;
     }
+
+    .input-checkbox {
+        display: none;
+      }
+      
+      .label-checkbox{
+        font-family: Raleway-Regular;
+        
+        color: #999999;
+        cursor: pointer;
+      }
+      
+      .label-checkbox::before {
+        content: "\f00c";
+        font-family: FontAwesome;
+        font-size: 10px;
+        color: #FFFFFF;
+        padding: 10px;
+        border-radius: 30px;
+        background:#4DEBB9;
+        width: 45px;
+        height: 45px;
+      }
+      
+      .input-checkbox:checked + .label-checkbox::before {
+        background-color: #000000;
+        opacity: 0.5;
+      }
+

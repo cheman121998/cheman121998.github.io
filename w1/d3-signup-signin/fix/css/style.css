@@ -1,0 +1,168 @@
+body, input, label, a, button {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #ffffff
+}
+
+body{
+    margin: 0;
+    background: #C7B2B2;
+    padding: 116px 0;
+}
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 724px;
+    min-height: 1048px;
+    background: #F76C6C;
+   
+}
+.sign-in{
+    padding: 134px 94px;
+}
+
+.sign-in .title{
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 8px;
+    
+}
+.sign-in .slogan {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 104px;
+}
+
+form .form-group{
+    margin-bottom: 52px;
+}
+form .input-group{
+    display: flex;
+    border-bottom: 1px solid #ffffff;
+}
+
+form .input-group img{
+    width: 24px;
+}
+form .form-group input {
+    width: 100% ;
+    border: none;
+    background: transparent;
+    font-size: 28px;
+    padding: 24px 0 16px 16px;
+    color: #ffffff;
+}
+form .form-group input:focus,form .form-group input:active,form .form-group input:valid{
+    outline: none;
+}
+form .form-group input::placeholder{
+    color: #ffffff;
+}
+
+form .check-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 62px;
+}
+form .check-group img{
+    height: 36px;
+    width: 36px;
+    margin-right: 36px;
+}
+
+form .remember-me{
+    display: flex;
+    align-items: center;
+}
+
+form .check-group a{
+    text-decoration: none;
+}
+
+form button{
+    background: #ffffff;
+    height: 88px;
+    width: 100%;
+    color:#F76C6C;
+    font-size: 26px;
+    padding: 28px auto;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 56px;
+}
+
+form button:hover{
+    opacity: 0.5;
+   
+}
+form .link-signup{
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+a:hover{
+    opacity: 0.8;
+}
+
+#sign-up .container{
+    background: black;
+    color:  #F76C6C;
+}
+
+#sign-up .container img{
+    width: 28px;
+    height: 28px;
+    margin-right: 54px;
+}
+
+#sign-up .container div{
+    font-size: 30px;
+}
+#sign-up .header {
+    display: flex;
+    color: #ffffff;
+    background: #F76C6C;
+    padding: 42px 60px;
+}
+.body form {
+    padding: 42px 94px;
+    background: #ffffff;
+    color: #F76C6C;
+}
+
+#sign-up .body form .form-group{
+    margin-bottom: 38px;
+}
+#sign-up form label {
+    font-size: 16px;
+    color: #777777;
+    margin-bottom: 16px;
+}
+
+#sign-up form input {
+    font-size: 28px;
+    padding: 16px 0;
+    font-weight: 400;
+    color: #000000;    
+    border-bottom: 1px solid #777777;
+}
+
+#sign-up form input::placeholder{
+   color: #777777;
+}
+
+#sign-up button{
+    background: #F76C6C;
+    color: #ffffff;
+}
+
+#sign-up .link-signup span, #sign-up .link-signup a {
+    color: #000000;
+    font-size: 24px;
+}
+
+
+
