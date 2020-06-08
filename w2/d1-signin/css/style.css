@@ -1,3 +1,177 @@
-font-family: 'Lato', sans-serif;
+/* font-family: 'Lato', sans-serif;
 font-family: 'Noto Sans JP', sans-serif;
-font-family: 'Playfair Display', serif;
+font-family: 'Playfair Display', serif; */
+body {
+    margin:0;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 134px 0;
+    background: url('../images/layer1.png') no-repeat;
+    background-position: 0 100%;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    background-color: #E4E4E4;
+}
+.container{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 100%;
+    max-width: 1124px;
+    min-height: 700px;
+    background: white;
+}
+
+.left-side{
+    background: #ffffff;
+}
+.left-side .logo{
+    font-size: 54px;
+    font-family: 'Playfair Display', serif;
+    background: #000000;
+    font-style: italic;
+    color: #ffffff;
+    width: fit-content;
+    padding: 12px 28px;
+}
+
+.signup{
+    padding: 88px 60px;
+}
+
+.txt-welcome{
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+.txt-continue{
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+form {
+    margin-top: 76px;
+}
+form .group {
+    margin-bottom: 36px;
+}
+
+form label{
+    font-size: 15px;
+    color: #999999;
+    display: block;
+    margin-bottom: -12px;
+}
+form input{
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #B3B3B3;
+    width: 100%;
+}
+form .group input:focus,form .group input:active,form .group input:valid{
+    height: 40px;
+}
+
+
+form button {
+    background: #6F9C3A;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 12px 40px;
+    height: 50px;
+    border: none;
+    margin-bottom: 56px;
+    cursor: pointer;
+}
+form button:hover{
+    opacity: 0.5;
+}
+.signin{
+    display: flex; 
+    justify-content: space-between;
+    font-size: 15px;
+    align-items: center;
+}
+.signin div{
+   
+    color: #999999;
+}
+.signin button{
+    border: none;
+    background: #F4F4F4;
+    height: 36px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.signin button:hover{
+    background: #000000;
+    color: white;
+}
+
+.right-side {
+    background: url(../images/layer1.png) no-repeat;
+    object-fit: cover;
+    padding: 128px 160px;
+    position: relative;
+    background-position: 0 100%;
+    background-size: 100% auto;
+    background-attachment: local;
+    background-color: #ebebeb;
+    opacity: 0.8;
+}
+
+.right-side .title{
+    font-size: 72px;
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+}
+.right-side p{
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+.right-side .slogan{
+    padding: 8px 40px;
+    width: 100%;
+    text-align: justify;
+    /* position: relative; */
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-side .img-play{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    /* position: absolute;
+    right: 0;
+    bottom: 0; */
+}
+.right-side .img-play img{
+    width: 12px;
+}
+
+.continue button{
+    background: #6F9C3A;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    padding: 18px 54px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+.continue button:hover{
+    color:#6F9C3A;
+    background: #ffffff;
+}
+.continue img{
+    margin-left: 5px;
+}
