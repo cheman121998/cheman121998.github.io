@@ -135,12 +135,13 @@ form button:hover{
 }
 .right-side .slogan{
     padding: 8px 40px;
-    width: 100%;
+    width: 90%;
     text-align: justify;
     display: flex;
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 
 .right-side .img-play{
@@ -151,6 +152,9 @@ form button:hover{
     background: #ffffff;
     cursor: pointer;
     outline: none;
+    position: absolute;
+    top: 60%;
+    right: 20%;
 }
 .right-side .img-play img{
     width: 12px;
