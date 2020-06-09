@@ -6,10 +6,10 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
     padding: 134px 0;
     background: url('../images/layer1.png') no-repeat;
-    background-position: -340px 200px;
+    background-position: -340px 100px;
     background-size: 100% auto;
     background-attachment: fixed;
-    background-color: #E4E4E4;
+    background-color: #EBEBEB;
 
 }
 .container{
@@ -19,7 +19,7 @@ body {
     width: 100%;
     max-width: 1124px;
     min-height: 700px;
-    background: white;
+    background-color: #F8F8F8;
 }
 
 .left-side{
@@ -111,14 +111,14 @@ form button:hover{
 }
 
 .right-side {
-    background: url(../images/layer1.png) no-repeat;
+    background: url(../images/clip.png) no-repeat;
     object-fit: cover;
     padding: 128px 160px;
     position: relative;
     background-position: 0 100%;
-    background-size: 100% auto;
+    background-size: 100% 60%;
     background-attachment: local;
-    background-color: #ebebeb;
+    background-color: #F8F8F8;
     
 }
 
