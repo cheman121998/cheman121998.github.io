@@ -1,0 +1,132 @@
+body, button, p, div{
+    font-family: 'Lato', sans-serif;
+}
+:focus{
+    outline: none;
+}
+body{
+    margin: 0;
+    padding: 44px 0;
+}
+#challenge1 .container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+}
+#challenge1 .container .header{ 
+display: grid;
+margin: 0 140px;
+grid-template-columns: auto auto auto;
+justify-content: space-between;
+text-align: center;
+}
+#challenge1 .header a img{
+    height: 50px;
+    width: 108px;
+}
+#challenge1 .container .header .nav.navbar-nav{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+}
+#challenge1 .header .nav.navbar-nav a{
+    text-decoration: none;
+    padding: 0 22px;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+#challenge1 .header .nav.navbar-nav a:hover{
+    opacity: 0.5;
+}
+
+#challenge1 .header button{
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    height: 44px;
+    border: none;
+    border-radius: 26px;
+    outline: none;
+    padding: 12px 28px;
+    background: #EE4064;
+    transition: 0.8s ease-in-out;
+    cursor: pointer;
+}
+#challenge1 .header button:hover{
+    opacity: 0.6;
+}
+
+#body .container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    min-height: 700px;
+    background: url('../images/group1.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#body .container .content{
+    position: absolute;
+    display: block;
+    justify-content: center;
+    width: 35%;
+    top: 20%;
+    left: 10%;
+}
+#body .container .content p{
+    width: 100%;
+    font-size: 18px;
+}
+
+#body .container .content h1{
+    font-size: 64px;
+    font-weight: bold;
+    
+}
+.group-button{
+    margin-top: 84px;
+}
+
+.play {
+    border: none;
+    background: #EE4064;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 26px;
+    height: 44px;
+    padding: 12px 28px; 
+    margin-right: 16px;
+    transition: 0.8s ease;
+    cursor: pointer;
+}
+
+.watch {
+    border: 1px solid #000000;
+    background: none;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 26px;
+    height: 44px;
+    padding: 12px 28px;
+    transition: 0.8s ease;
+    cursor: pointer;
+}
+
+.play:hover {
+    color: black;
+    background: #ffffff;
+    border: 1px solid #000000;
+}
+
+.watch:hover {
+    color: #ffffff;
+    background: #EE4064;
+    border: none;
+}

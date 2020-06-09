@@ -194,4 +194,7 @@ form button:hover{
 
 .continue img{
     margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
