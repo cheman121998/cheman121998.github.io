@@ -189,9 +189,9 @@ form button:hover{
     text-align: center;
 }
 .continue button:hover{
-    color: #6F9C3A;
-    background: #ffffff;
+    opacity: 0.8;
 }
+
 .continue img{
-    margin-left: 5px;
+    margin-left: 10px;
 }
