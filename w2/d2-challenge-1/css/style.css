@@ -52,7 +52,7 @@ text-align: center;
     outline: none;
     padding: 12px 28px;
     background: #EE4064;
-    transition: 0.8s ease-in-out;
+    transition: 0.2s ease-in-out;
     cursor: pointer;
 }
 #challenge1 .header button:hover{
@@ -102,7 +102,7 @@ text-align: center;
     height: 44px;
     padding: 12px 28px; 
     margin-right: 16px;
-    transition: 0.8s ease;
+    transition: 0.2s ease;
     cursor: pointer;
 }
 
@@ -115,7 +115,41 @@ text-align: center;
     border-radius: 26px;
     height: 44px;
     padding: 12px 28px;
-    transition: 0.8s ease;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.play:hover {
+    color: black;
+    background: #ffffff;
+    border: 1px solid #000000;
+}
+
+.watch:hover {
+    color: #ffffff;
+    background: #EE4064;
+    border: none;
+}
+
+
+/* Style challenge 2 */
+
+#challeng2 .play {
+   
+    background: ##308AD3;
+   
+}
+
+.watch {
+    border: 1px solid #000000;
+    background: none;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 26px;
+    height: 44px;
+    padding: 12px 28px;
+    transition: 0.2s ease;
     cursor: pointer;
 }
 
