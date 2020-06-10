@@ -35,12 +35,18 @@ justify-content: space-between;
 a.nav-link {
     text-decoration: none;
     font-size: 14px;
-    padding-right: 22px;
+    margin: 0 12px;
     font-weight: bold;
     color: black;
+    min-width: 20px;
+    opacity: 0.8;
+}
+.navbar .active {
+    opacity: 1;
 }
 a:hover{
-    opacity: 0.8;
+    opacity: 1;
+    border-bottom: 1px solid #000;
 }
 
 #challenge1 .header button{
@@ -141,3 +147,4 @@ a:hover{
     background: #EE4064;
     border: none;
 }
+
