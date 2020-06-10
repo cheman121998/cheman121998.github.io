@@ -32,6 +32,12 @@ justify-content: space-between;
 .navbar {
     display: flex;
 }
+a.nav-link:last-child{
+margin-right: 0;
+}
+a.nav-link:first-child{
+    margin-left: 0;
+}
 a.nav-link {
     text-decoration: none;
     font-size: 14px;
@@ -39,7 +45,7 @@ a.nav-link {
     font-weight: bold;
     color: black;
     min-width: 20px;
-    opacity: 0.8;
+    opacity: 0.5;
 }
 .navbar .active {
     opacity: 1;
