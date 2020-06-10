@@ -14,32 +14,33 @@ body{
     max-width: 1440px;
 }
 #challenge1 .container .header{ 
-display: grid;
+display: flex;
 margin: 0 140px;
-grid-template-columns: auto auto auto;
 justify-content: space-between;
-text-align: center;
+
 }
 #challenge1 .header a img{
-    height: 50px;
+    height: 42px;
     width: 108px;
 }
-#challenge1 .container .header .nav.navbar-nav{
+.nav{
     display: flex;
-    flex-wrap: wrap;
-    list-style: none;
+    align-items: center;
     justify-content: center;
-    text-align: center;
+
 }
-#challenge1 .header .nav.navbar-nav a{
+.navbar {
+    display: flex;
+}
+a.nav-link {
     text-decoration: none;
-    padding: 0 22px;
-    color: black;
-    font-weight: bold;
     font-size: 14px;
+    padding-right: 22px;
+    font-weight: bold;
+    color: black;
 }
-#challenge1 .header .nav.navbar-nav a:hover{
-    opacity: 0.5;
+a:hover{
+    opacity: 0.8;
 }
 
 #challenge1 .header button{
@@ -47,18 +48,20 @@ text-align: center;
     font-weight: bold;
     color: #ffffff;
     height: 44px;
+    min-width: 158px;
     border: none;
     border-radius: 26px;
-    outline: none;
     padding: 12px 28px;
     background: #EE4064;
     transition: 0.2s ease-in-out;
     cursor: pointer;
 }
+#challenge1 .header button:focus, #challenge1 .header button:active{
+    outline: none;
+}
 #challenge1 .header button:hover{
     opacity: 0.6;
 }
-
 #body .container {
     margin: 0 auto;
     width: 100%;
@@ -90,6 +93,7 @@ text-align: center;
 }
 .group-button{
     margin-top: 84px;
+    display: flex;
 }
 
 .play {
@@ -104,8 +108,11 @@ text-align: center;
     margin-right: 16px;
     transition: 0.2s ease;
     cursor: pointer;
+    min-width: 158px;
 }
-
+.play:focus, .play:active{
+    outline: none;
+}
 .watch {
     border: 1px solid #000000;
     background: none;
@@ -114,43 +121,13 @@ text-align: center;
     font-weight: bold;
     border-radius: 26px;
     height: 44px;
+    min-width: 158px;
     padding: 12px 28px;
     transition: 0.2s ease;
     cursor: pointer;
 }
-
-.play:hover {
-    color: black;
-    background: #ffffff;
-    border: 1px solid #000000;
-}
-
-.watch:hover {
-    color: #ffffff;
-    background: #EE4064;
-    border: none;
-}
-
-
-/* Style challenge 2 */
-
-#challeng2 .play {
-   
-    background: ##308AD3;
-   
-}
-
-.watch {
-    border: 1px solid #000000;
-    background: none;
-    color: #000000;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 26px;
-    height: 44px;
-    padding: 12px 28px;
-    transition: 0.2s ease;
-    cursor: pointer;
+.watch:focus, .play:active{
+    outline: none;
 }
 
 .play:hover {
