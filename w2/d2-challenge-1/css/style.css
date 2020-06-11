@@ -8,18 +8,18 @@ body{
     margin: 0;
     padding: 44px 0;
 }
-#challenge1 .container{
+.container{
     margin: 0 auto;
     width: 100%;
     max-width: 1440px;
 }
-#challenge1 .container .header{ 
+.container .header{ 
 display: flex;
 margin: 0 140px;
 justify-content: space-between;
 
 }
-#challenge1 .header a img{
+.header a img{
     height: 42px;
     width: 108px;
 }
@@ -27,7 +27,6 @@ justify-content: space-between;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .navbar {
     display: flex;
@@ -50,12 +49,12 @@ a.nav-link {
 .navbar .active {
     opacity: 1;
 }
-a:hover{
+.nav-link:hover{
     opacity: 1;
     border-bottom: 1px solid #000;
 }
 
-#challenge1 .header button{
+.header button{
     font-size: 14px;
     font-weight: bold;
     color: #ffffff;
@@ -68,10 +67,10 @@ a:hover{
     transition: 0.2s ease-in-out;
     cursor: pointer;
 }
-#challenge1 .header button:focus, #challenge1 .header button:active{
+.header button:focus, .header button:active{
     outline: none;
 }
-#challenge1 .header button:hover{
+.header button:hover{
     opacity: 0.6;
 }
 #body .container {
@@ -154,3 +153,60 @@ a:hover{
     border: none;
 }
 
+/* Style dark page */
+#challenge-dark {
+    padding: 44px 0 0 0 ;
+}
+#challenge-dark, #challenge-dark button, #challenge-dark a{
+    color: #ffffff;
+}
+
+#challenge-dark .nav-link:hover{
+  border-bottom: 1px solid #ffffff;
+}
+#challenge-dark .nav-link:hover{
+    opacity: 0.8;
+}
+#challenge-dark .header button{
+    
+    background: #308AD3;
+}
+
+#challenge-dark {
+    background-color: #2C104A;
+}
+
+
+#challenge-dark #body .container {
+    
+    background: url('../images/group2.png'), url('../images/group56.png');
+    background-repeat: no-repeat no-repeat;
+    font-size: small;
+    background-color: #2C104A;
+  
+}
+
+#challenge-dark #body .container .content {
+    width: 45%;
+}
+
+
+#challenge-dark .play{
+    background: #308AD3;
+}
+
+#challenge-dark .play:hover{
+    background: #ffffff;
+    color: #308AD3;
+}
+
+
+#challenge-dark .watch{
+    background: transparent;
+    border: 1px solid #ffffff!important;
+}
+#challenge-dark .watch:hover{
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+    background: #ffffff;
+    color: #308AD3 ;
+}
