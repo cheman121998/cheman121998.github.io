@@ -166,4 +166,66 @@ a.nav-link {
 }
 
 
+/* Style dark page */
+#challenge-dark {
+    padding: 44px 0 0 0 ;
+}
+#challenge-dark, #challenge-dark button, #challenge-dark a{
+    color: #ffffff;
+}
+
+#challenge-dark .nav-link:hover{
+  border-bottom: 1px solid #ffffff;
+  opacity: 0.8;
+}
+#challenge-dark .nav-link:focus{
+    height: fit-content;
+}
+#challenge-dark .header button{
+    
+    background: #308AD3;
+}
+
+#challenge-dark {
+    background-color: #2C104A;
+}
+
+
+#challenge-dark #body .container {
+    
+    background: url('../images/group2.png'), url('../images/group56.png');
+    background-repeat: no-repeat no-repeat;
+    background-color: #2C104A;
+  
+}
+
+#challenge-dark #body .container .content {
+    width: 45%;
+}
+
+
+#challenge-dark .play{
+    background: #308AD3;
+}
+
+#challenge-dark .play:hover{
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+
+#challenge-dark .watch{
+    background: transparent;
+    border: 1px solid #ffffff!important;
+}
+#challenge-dark .watch:hover{
+    transition: 0.2s ease;
+    background: #308AD3;
+    color: #ffffff ;
+    outline: none!important;
+    border: none!important;
+}
+
+
 

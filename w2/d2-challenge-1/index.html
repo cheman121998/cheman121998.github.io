@@ -43,7 +43,14 @@
     </section>
     <script>
         function darkLightMode() {
-            var getId = document.getElementById('challenge1').id = 'challenge-dark'; 
+        
+            var i = document.getElementById('challenge1').id; 
+            if(i == "challenge-dark"){
+                i = document.getElementById('challenge-dark').id = 'challenge1';
+            }
+            else {
+            var i = document.getElementById('challenge1').id = 'challenge-dark';
+            }
         }
     </script>
         
