@@ -12,7 +12,13 @@
         <div class="container">
             <div class="header">
                 
-                <div style="display: flex; justify-items: center;"><a href="#"><img src="./images/black.svg" alt="logo"></a></div>
+                <div style="display: flex; justify-items: center;">
+                   <div>
+                    <a href="#">
+                        <img src="./images/black.svg" alt="logo">
+                    </a>
+                   </div>
+                </div>
                   <div class="nav">
                     <div class="navbar">
                        
@@ -29,7 +35,7 @@
                             <a class="nav-link" href="#">Support</a>
                     </div>
                 </div>
-                    <div><button>Resgister for free</button></div>
+                    <div><button type="button" onclick="modeDark()">Resgister for free</button></div>
                 
             </div>
             <div class="content">
@@ -44,7 +50,11 @@
             </div>
             
         </div>
-       
     </section>
+    <script>
+        function modeDark() {
+          window.location.assign("./index2.html")
+        }
+    </script>
 </body>
 </html>
