@@ -11,17 +11,9 @@
     <section id="body">  
         <div class="container">
             <div class="header">
-                
-                <div style="display: flex; justify-items: center;">
-                   <div>
-                    <a href="#">
-                        <img src="./images/black.svg" alt="logo">
-                    </a>
-                   </div>
-                </div>
+                <div style="display: flex; justify-items: center;"><a href="#"><img src="./images/black.svg" alt="logo" id="logo"></a></div>
                   <div class="nav">
-                    <div class="navbar">
-                       
+                    <div class="navbar ">
                             <a class="nav-link active" href="#">Home</a>
                         
                             <a class="nav-link" href="#">Our Lab</a>
@@ -35,8 +27,7 @@
                             <a class="nav-link" href="#">Support</a>
                     </div>
                 </div>
-                    <div><button type="button" onclick="modeDark()">Resgister for free</button></div>
-                
+                    <div><button onclick="darkLightMode()">Resgister for free</button></div>
             </div>
             <div class="content">
                 
@@ -48,13 +39,13 @@
                     <div><button class="watch">Watch a demo</button></div>
                 </div>
             </div>
-            
         </div>
     </section>
     <script>
-        function modeDark() {
-          window.location.assign("./index2.html")
+        function darkLightMode() {
+            var getId = document.getElementById('challenge1').id = 'challenge-dark'; 
         }
     </script>
+        
 </body>
 </html>
