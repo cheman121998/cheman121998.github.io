@@ -163,9 +163,10 @@ a.nav-link {
 
 #challenge-dark .nav-link:hover{
   border-bottom: 1px solid #ffffff;
+  opacity: 0.8;
 }
-#challenge-dark .nav-link:hover{
-    opacity: 0.8;
+#challenge-dark .nav-link:focus{
+    height: fit-content;
 }
 #challenge-dark .header button{
     
@@ -181,7 +182,6 @@ a.nav-link {
     
     background: url('../images/group2.png'), url('../images/group56.png');
     background-repeat: no-repeat no-repeat;
-    font-size: small;
     background-color: #2C104A;
   
 }
@@ -196,8 +196,9 @@ a.nav-link {
 }
 
 #challenge-dark .play:hover{
-    background: #ffffff;
-    color: #308AD3;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
 }
 
 
@@ -206,7 +207,13 @@ a.nav-link {
     border: 1px solid #ffffff!important;
 }
 #challenge-dark .watch:hover{
-    transition: cubic-bezier(0.19, 1, 0.22, 1);
-    background: #ffffff;
-    color: #308AD3 ;
+    transition: 0.2s ease;
+    background: #308AD3;
+    color: #ffffff ;
+    outline: none!important;
+    border: none!important;
+}
+
+.nav_item:hover::after{
+    display: block;
 }
