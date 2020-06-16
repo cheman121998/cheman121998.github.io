@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Challenge 2</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="header">
+                <a href="#" class="logo">
+                    <img src="./images/logo.svg" alt="logo">
+                </a>
+                
+                <div class="nav" id="nav-menu">
+                    <a href="#" class="nav-link">
+                        <div class="nav-item active">
+                            <div href="#">Products</div>
+                            <img src="./images/Path 57.svg" alt="down-cross">
+                        </div>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <div href="#">Use Cases</div>
+                        <img src="./images/Path 57.svg" alt="down-cross">
+                    </a>
+                    <a href="#" class="nav-link">
+                        <div href="#">Docs</div>
+                        <img src="./images/Path 57.svg" alt="down-cross">
+                    </a>
+                    <a href="#" class="nav-link">
+                        <div href="#">Pricing</div>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <div href="#">About us</div>
+                        <img src="./images/Path 57.svg" alt="down-cross">
+                    </a>
+                </div>
+                <div class="btn-menu">
+                    <button class="btn-login">Login</button>
+                    <button class="btn-getAPI">Get API keys</button>
+                </div>
+                <a href="javascript:void(0);" type="button" class="icon" onclick="toggleMenu()">
+                    <img src="./images/menu.svg" alt="Buton menu"></i>
+                </a>
+        </div>
+    </div>
+    <section class="content">
+        <div class="container">
+            <div class="mark-cover"></div>
+            <div class="text-content">
+                    <div class="welcome">Welcome</div>
+                    <h1>Empowering your everyday <br>transactions making payment <br>processing easy</h1>
+                    <div class="btn-started">
+                        <button>Get Started <img src="./images/down-arrow.svg" alt=""></button>
+                    </div>
+            </div>
+        </div>
+        <div class="group-card">
+            <div class="card">
+                 <a  href= "#"><img src="./images/card1.svg" alt=""></a>
+                 <div>
+                     <p style="font-weight:bold">Reinventing Benin City</p>
+                     <p>In making payment easier we reinvented Nigeria's vibrant city.</p>
+                 </div>
+            </div>
+             <div class="card">
+                 <a  href= "#"><img src="./images/card2.svg" alt=""></a>
+                 <div>
+                     <p style="font-weight:bold">The BOO Project</p>
+                     <p>The Bringing Online Open (BOO) project.</p>
+                 </div>
+            </div>
+             <div class="card">
+                 <a  href= "#"><img src="./images/card3.svg" alt=""></a>
+                 <div>
+                     <p style="font-weight:bold">Improved dev enviroment</p>
+                     <p>Integration and use of our API has been updated (12.8)</p>
+                 </div>
+            </div>
+            <div class="next-back">
+                <a href= "#" class="back"><img src="./images/back.svg" alt=""></a>
+                <a href= "#" class="next"><img src="./images/next.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="rotate">
+            <div class="favorite">Your favorite fintech company</div>
+            <div class="power">Powered by trust</div>
+        </div>
+    </section>
+    <script>
+        function toggleMenu() {
+        var x = document.getElementById("nav-menu");
+        if (x.className === "nav") {
+        x.className += " responsive";
+        } else {
+        x.className = "nav";
+        }
+        }
+    </script>
+</body>
+</html>

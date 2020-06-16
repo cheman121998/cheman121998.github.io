@@ -166,8 +166,8 @@ a.nav-link {
 }
 
 
-/* Style dark page */
-.challenge-dark {
+/* Style dark page by class */
+/* .challenge-dark {
     padding: 44px 0 0 0 ;
 }
 .challenge-dark, .challenge-dark button, .challenge-dark a{
@@ -225,7 +225,69 @@ a.nav-link {
     color: #ffffff ;
     outline: none!important;
     border: none!important;
+} */
+
+
+/* Style dark page by id */
+
+
+#dark {
+    padding: 44px 0 0 0 ;
+}
+#dark, #dark button, #dark a{
+    color: #ffffff;
+}
+
+#dark .nav-link:hover{
+  border-bottom: 1px solid #ffffff;
+  opacity: 0.8;
+}
+#dark .nav-link:focus{
+    height: fit-content;
+}
+#dark .header button{
+    
+    background: #308AD3;
+}
+
+#dark {
+    background-color: #2C104A;
 }
 
 
+#dark #body .container {
+    
+    background: url('../images/group2.png'), url('../images/group56.png');
+    background-repeat: no-repeat no-repeat;
+    background-color: #2C104A;
+  
+}
+
+#dark #body .container .content {
+    width: 45%;
+}
+
+
+#dark .play{
+    background: #308AD3;
+}
+
+#dark .play:hover{
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+
+#dark .watch{
+    background: transparent;
+    border: 1px solid #ffffff!important;
+}
+#dark .watch:hover{
+    transition: 0.2s ease;
+    background: #308AD3;
+    color: #ffffff ;
+    outline: none!important;
+    border: none!important;
+}
 

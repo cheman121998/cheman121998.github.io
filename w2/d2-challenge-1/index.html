@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <title>HOME</title>
 </head>
-<body class="challenge-light" id="challenge1">
+<body class="challenge-light" id="light">
     <section id="body">  
         <div class="container">
             <div class="header">
@@ -43,9 +43,31 @@
     </section>
     <script>
         function darkLightMode() {
-            var element = document.body;
-            element.classList.toggle("challenge-dark");
+            //cách 1
+            // var element = document.body;
+            // element.classList.toggle("challenge-dark");
+            // var getIdMode = document.getElementsByClassName('challenge-light').id;
+
+            //cách 2
+            // var bodyElement = document.querySlector("body");
+            // bodyElement.setAttribute("id", bodyElement.id === 'light' ? 'dark' : 'light'); 
+
+            //cách 3
+            // var bodyElement = document.body;
+            // bodyElement.id = bodyElement.id === "light" ? 'dark' : 'light';
+         
+            //cách 4
+           
+            document.getElementById('light').id = 'dark';
+            
+            // getElement.id ='dark';
+            // var getElement = document.getElementById('dark');
+            // getElement.id = 'light';
+            
+
         }
+
+           
     </script>
 </body>
 </html>
