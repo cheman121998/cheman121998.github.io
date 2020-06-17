@@ -75,6 +75,18 @@ header .logo img{
     object-fit: cover;
     cursor: pointer;
 }
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
 .btn-login {
     font-weight: bold;
     font-size: 14px;
@@ -304,6 +316,12 @@ header .logo img{
     .next-back .back{
         margin-right: 8px;     
     }
+    .checkbtn{
+        display: block;
+    }
+    #check:checked ~ ul{
+        left: 0;
+      }
    
   }
   
@@ -321,9 +339,6 @@ header .logo img{
       text-align: left;
       background: #ffffff;
     }
-
-
-
     .btn-getAPI::after {
         background-color: #19b698;
         border-radius: 5px;
@@ -331,3 +346,5 @@ header .logo img{
     }
 
   }
+
+  
