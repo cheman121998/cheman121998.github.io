@@ -8,6 +8,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Rubik:wght@300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Challenge 2</title>
 </head>
 
@@ -48,8 +49,9 @@
             <!-- <a href="javascript:void(0);" type="button" class="icon" onclick="toggleMenu()">
                 <img src="./images/menu.svg" alt="Buton menu"></i>
             </a> -->
-            <label for="check" class="checkbtn icon">
-                <img src="./images/menu.svg" alt="Menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
             </label>
         </div>
     </div>
@@ -66,14 +68,14 @@
         </div>
         <div class="group-card">
             <div class="card">
-                <a href="#"><img src="./images/card1.svg" alt=""></a>
+                <a href="#"><img src="./images/card1.svg"></a>
                 <div>
                     <p style="font-weight:bold">Reinventing Benin City</p>
                     <p>In making payment easier we reinvented Nigeria's vibrant city.</p>
                 </div>
             </div>
             <div class="card">
-                <a href="#"><img src="./images/card2.svg" alt=""></a>
+                <a href="#"><img src="./images/card2.svg"></a>
                 <div>
                     <p style="font-weight:bold">The BOO Project</p>
                     <p>The Bringing Online Open (BOO) project.</p>
@@ -86,9 +88,10 @@
                     <p>Integration and use of our API has been updated (12.8)</p>
                 </div>
             </div>
+            
             <div class="next-back">
-                <a href="#" class="back"><img src="./images/back.svg" alt=""></a>
-                <a href="#" class="next"><img src="./images/next.svg" alt=""></a>
+                <a onclick="plusDivs(-1)" class="back"><img src="./images/back.svg" ></a>
+                <a onclick="plusDivs(1)" class="next"><img src="./images/next.svg"  ></a>
             </div>
         </div>
         <div class="rotate">
@@ -97,20 +100,26 @@
         </div>
     </section>
     <script>
-        $(document).ready(function () {
-            // menu click event
-            $('.menuBtn').click(function () {
-                $(this).toggleClass('act');
-                if ($(this).hasClass('act')) {
-                    $('.mainMenu').addClass('act');
-                }
-                else {
-                    $('.mainMenu').removeClass('act');
-                }
-            });
-        });
-
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+      
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("card");
+          if (n > x.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "flex";  
+          
+        }
     </script>
+
 </body>
 
 </html>

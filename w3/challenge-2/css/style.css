@@ -8,14 +8,10 @@ body{
 .container-fluid{
     margin: 0 auto;
     width: 100%;
-    max-width: 1440px;
+   
     padding: 20px 0;
 }
-.container{
-    margin: 0 auto;
-    max-width: 1440px;
-    min-height: 690px;
-}
+
 .header {
     display: flex;
     margin: 0 44px;
@@ -54,9 +50,9 @@ body{
     transition: cubic-bezier(0.6, 0.04, 0.98, 0.335);
  }
  
-.icon {
+/* .icon {
    display: none;
-} 
+}  */
 .logo:hover{
     opacity: 0.8;
     transition: cubic-bezier(0.77, 0, 0.175, 1);
@@ -76,13 +72,12 @@ header .logo img{
     cursor: pointer;
 }
 .checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
+    
+        font-size: 30px;
+        color: black;
+        cursor: pointer;
+        display: none;
+      
   }
   #check{
     display: none;
@@ -108,15 +103,16 @@ header .logo img{
    
 }
 .content {
-    max-width: 1440px;
+    
     min-height: 690px;
     background: url('../images/building.png');
     background-repeat: no-repeat;
     position: relative;
+    background-size: cover;
 }
 .container{
     margin: 0 140px;
-    max-width: 1170px;
+    /* max-width: 1170px; */
     min-height: 600px;
    
     display: flex;
@@ -245,14 +241,35 @@ header .logo img{
 }
   
   @media screen and (max-width: 600px) {
-    .nav {display: none;}
+    .nav {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .nav .nav-link{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        font-size: 20px;
+    }
+    a:hover, a.active{
+        background: none;
+        color: #e6e6e6;
+      }
+
     .btn-menu{
         display: none;
     }
-    a.icon {
+    /* a.icon {
     float: right;
     display: flex;
-  }
+  } */
     .container {
         margin: 0 32px;
     }
@@ -322,17 +339,18 @@ header .logo img{
     #check:checked ~ ul{
         left: 0;
       }
+ 
    
   }
   
   @media screen and (max-width: 600px) {
     .nav.responsive {position: relative;}
-    .nav.responsive .icon {
+    /* .nav.responsive .icon {
       position: absolute;
       right: 0;
       top: 0;
       background: #ffffff;
-    }
+    } */
     .nav.responsive a {
       float: none;
       display: block;
@@ -347,4 +365,4 @@ header .logo img{
 
   }
 
-  
+ 
