@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Challenge 2 Again</title>
+</head>
+<body>
+   
+        <section id="menu">
+          <div class="container">
+            <div class="topnav" id="myTopnav">
+                <div style="display:flex"><a href="#home" class="logo"><img src="./images/black@2x.png" alt="logo"></a></div>
+               <div class="menu-group">
+                <div class="dropdown">
+                    <button class="dropbtn">Products 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                  </div> 
+                  <div class="dropdown">
+                      <button class="dropbtn">Use Cases  
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                      </div>
+                    </div>
+                    <div class="dropdown">
+                      <button class="dropbtn">Docs 
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                      </div>
+                    </div>
+                    <div class="price"><a href="#">Pricing</a></div>
+                    <div class="dropdown">
+                      <button class="dropbtn">About Us 
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                      </div>
+                    </div>
+               </div>
+                
+                <div class="btn-group">
+                    <button class="btn-login">Login</button>
+                    <button class="btn-getAPI">Get API Keys</button>
+                </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+              </div>
+            </div>
+        </section>
+        <section id="content">
+          <div class="container">
+
+          
+           <div class="content">
+              <div>Welcome</div>
+              <h1>Empowering your everyday transactions making payment processing easy</h1>
+              <div>
+                <button>Get Started<img src="./images/down-arrow.svg" alt=""></button>
+              </div>
+              <div class="">
+                <div>Your favorite fintech company</div>
+                <div>Powered by trust</div>
+              </div>
+           </div>
+          </div>
+        </section>
+   </div>
+   
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+</body>
+</html>

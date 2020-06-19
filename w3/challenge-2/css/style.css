@@ -4,7 +4,7 @@ body, button, a, label, div{
 }
 body{
     margin: 0;
-    height: 100vh;
+    height: 100%;
 }
 .container-fluid{
     padding: 20px 0;
@@ -29,17 +29,17 @@ a.logo{
     justify-content: center;
 }
 .nav .nav-link{
-    margin: 0 20px;
+    margin: 0 32px;
     display: flex;
     height: 20px;
     color: black;
     text-decoration: none;
+    padding: 10px 0;
+    justify-content: space-between;
 }
 .nav .nav-link .nav-item{
     display: flex;
-    justify-content: center;
-    text-align: center;
-    justify-items: center;
+    justify-content: space-between;
 }
 .nav .nav-link div{
     color: #000;
@@ -127,7 +127,7 @@ header .logo img{
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 0;
 }
 
@@ -144,11 +144,14 @@ header .logo img{
 .text-content h1{
     font-weight: bold;
     font-size: 42px;
-    
     z-index: 1;
+    white-space: wrap; 
+    width: 650px; 
+    overflow: hidden;
+    height: 100px;
 }
 
-.btn-started button{ 
+.btn-started{ 
     height: 42px;
     background: transparent;
     border: 1px solid #ffffff;
@@ -160,14 +163,13 @@ header .logo img{
     outline: none;
     cursor: pointer;
     font-size: 12px;
-    margin-top: 46px;
 }
 
-.btn-started button:hover{
+.btn-started:hover{
     opacity: 0.8;
     transition: cubic-bezier(0.23, 1, 0.320, 1);
 }
-.btn-started button:focus, .btn-started button:active{
+.btn-started:focus, .btn-started:active{
     outline: none;
 }
 .btn-started img{
@@ -247,129 +249,60 @@ header .logo img{
 }
   
   @media screen and (max-width: 600px) {
-    .nav {
-        display: none;
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    .nav .nav-link{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-        font-size: 20px;
-    }
-    a:hover, a.active{
-        background: none;
-        color: #e6e6e6;
-        transition: cubic-bezier(1, 0, 0, 1);
-    }
-
-    .btn-menu{
-        display: none;
-    }
-    /* a.icon {
-    float: right;
-    display: flex;
-  } */
-    .container {
+    .container{
         margin: 0 32px;
     }
-    a.logo{
-        display: flex;
-        justify-items: center;
-        height: 24px;
+    .header{
+        margin: 0 32px;
+    }
+   .text-content h1{
+        font-size: 26px;
+    }
+    .header .logo img{
         width: 64px;
     }
-    .text-content h1{
-        font-size: 26px;
-        width: auto;
+
+    .checkbtn i{
+        font-size: 20px;
     }
-    .welcome{
-        font-size: 13px;
+    .nav{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        text-align: left;
+        transition: all .5s;
+        left: -100%;
+        top: 76px;
+        display: block;
+        z-index: 100;
+        background-color: #fff;
     }
- 
-    .rotate{
+    .nav .nav-link .nav-item{
+        font-size: 14px;
+        font-weight: bold;
+       
+    }
+    .btn-login{
         display: none;
     }
-    .text-content{
-        height: 350px;
-    }
-    .card:not(:first-child) {display: none;}
-    .group-card .car {
-       padding: 0px;
-    }
-    .group-card {
-       margin-left: 0;
-       border-radius: 0; 
-       padding: 32px;
-    }
-    .card{
-        width: 100%;
-        margin: 2px;
-    }
-    .card img {
-       margin: 0;
-        width: 60px;
-        height: 76px;
-    }
-    .card p:first-child {
-        padding: 0 16px;
-        font-size: 14px;
-    }
-    .card p {
-        font-size: 12px;
-        white-space: pre-wrap;
-        width: 90%;
-        height: 31px;
-        overflow: hidden;
-        text-overflow: clip;
-        margin: 0 ;
-        padding: 0 16px;
-        }
-    .back, .next{
-        height: 22px;
-        width: 22px;
-    }
-    .next-back .back{
-        margin-right: 8px;     
+    
+    .rotate {
+        display: none;
     }
     .checkbtn{
         display: block;
+      }
+    .btn-menu{
+        display: none;
     }
-    #check:checked ~ .nav{
-        left: 0;
-        background: pink;
-    }
- 
    
+  #check:checked ~ .nav{
+    left: 0;
+  }
+  .btn-getAPI{
+      display: block;
   }
   
-  @media screen and (max-width: 600px) {
-    .nav.responsive {position: relative;}
-    /* .nav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-      background: #ffffff;
-    } */
-    .nav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-      background: #ffffff;
-    }
-    .btn-getAPI::after {
-        background-color: #19b698;
-        border-radius: 5px;
-        padding: 10px 20px;
-    }
-
   }
 
  
