@@ -4,12 +4,11 @@ body, button, a, label, div{
 }
 body{
     margin: 0;
+    height: 100vh;
 }
 .container-fluid{
-    margin: 0 auto;
-    width: 100%;
-   
     padding: 20px 0;
+    width: 100%;
 }
 
 .header {
@@ -20,7 +19,10 @@ body{
     font-weight: bold;
 }
 
-
+a.logo{
+    display: flex;
+    justify-items: center;
+}
 .nav {
     display: flex;
     align-items: center;
@@ -53,16 +55,17 @@ body{
 /* .icon {
    display: none;
 }  */
-.logo:hover{
-    opacity: 0.8;
-    transition: cubic-bezier(0.77, 0, 0.175, 1);
-}
+
 .active{
     opacity: 0.6;
 }
 .btn-menu .btn-login:hover, .btn-menu .btn-getAPI:hover{
     opacity: 0.5;
     transition: cubic-bezier(1, 0, 0, 1);
+    cursor: pointer;
+}
+.btn-login:focus, .btn-login:active, .btn-getAPI:focus, .btn-getAPI:active{
+    outline: none;
 }
 
 header .logo img{
@@ -72,12 +75,10 @@ header .logo img{
     cursor: pointer;
 }
 .checkbtn{
-    
         font-size: 30px;
         color: black;
         cursor: pointer;
         display: none;
-      
   }
   #check{
     display: none;
@@ -104,7 +105,7 @@ header .logo img{
 }
 .content {
     
-    min-height: 690px;
+    min-height: 100vh;
     background: url('../images/building.png');
     background-repeat: no-repeat;
     position: relative;
@@ -158,10 +159,16 @@ header .logo img{
     font-weight: bold;
     outline: none;
     cursor: pointer;
+    font-size: 12px;
+    margin-top: 46px;
 }
+
 .btn-started button:hover{
     opacity: 0.8;
     transition: cubic-bezier(0.23, 1, 0.320, 1);
+}
+.btn-started button:focus, .btn-started button:active{
+    outline: none;
 }
 .btn-started img{
     margin-left: 8px;
@@ -174,14 +181,13 @@ header .logo img{
     position: absolute;
     bottom: 0;
     right: 0;
-   
-    
 }
 
 .card {
-    display: flex;
+    display: none;
     width: 30%;
     margin: 28px 40px;
+   
 }
 .card img{
     width: 72px;
@@ -261,7 +267,8 @@ header .logo img{
     a:hover, a.active{
         background: none;
         color: #e6e6e6;
-      }
+        transition: cubic-bezier(1, 0, 0, 1);
+    }
 
     .btn-menu{
         display: none;
@@ -274,6 +281,8 @@ header .logo img{
         margin: 0 32px;
     }
     a.logo{
+        display: flex;
+        justify-items: center;
         height: 24px;
         width: 64px;
     }
@@ -284,10 +293,7 @@ header .logo img{
     .welcome{
         font-size: 13px;
     }
-    .btn-started button{
-        font-size: 12px;
-        margin-top: 46px;
-    }
+ 
     .rotate{
         display: none;
     }
@@ -336,9 +342,10 @@ header .logo img{
     .checkbtn{
         display: block;
     }
-    #check:checked ~ ul{
+    #check:checked ~ .nav{
         left: 0;
-      }
+        background: pink;
+    }
  
    
   }

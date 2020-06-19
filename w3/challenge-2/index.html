@@ -12,9 +12,12 @@
     <title>Challenge 2</title>
 </head>
 
-<body>
+<body onload="myFunction()">
     <div class="container-fluid">
         <div class="header">
+           
+            <input type="checkbox" id="check">
+
             <a href="#" class="logo">
                 <img src="./images/logo.svg" alt="logo">
             </a>
@@ -22,23 +25,23 @@
             <div class="nav" id="nav-menu">
                 <a href="#" class="nav-link">
                     <div class="nav-item active">
-                        <div href="#">Products</div>
+                        <div>Products</div>
                         <img src="./images/Path 57.svg" alt="down-cross">
                     </div>
                 </a>
                 <a href="#" class="nav-link">
-                    <div href="#">Use Cases</div>
+                    <div>Use Cases</div>
                     <img src="./images/Path 57.svg" alt="down-cross">
                 </a>
                 <a href="#" class="nav-link">
-                    <div href="#">Docs</div>
+                    <div>Docs</div>
                     <img src="./images/Path 57.svg" alt="down-cross">
                 </a>
                 <a href="#" class="nav-link">
-                    <div href="#">Pricing</div>
+                    <div>Pricing</div>
                 </a>
                 <a href="#" class="nav-link">
-                    <div href="#">About us</div>
+                    <div>About us</div>
                     <img src="./images/Path 57.svg" alt="down-cross">
                 </a>
             </div>
@@ -49,7 +52,6 @@
             <!-- <a href="javascript:void(0);" type="button" class="icon" onclick="toggleMenu()">
                 <img src="./images/menu.svg" alt="Buton menu"></i>
             </a> -->
-            <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
             </label>
@@ -88,10 +90,31 @@
                     <p>Integration and use of our API has been updated (12.8)</p>
                 </div>
             </div>
+            <div class="card">
+                <a href="#"><img src="./images/card1.svg"></a>
+                <div>
+                    <p style="font-weight:bold">Reinventing Benin City</p>
+                    <p>In making payment easier we reinvented Nigeria's vibrant city.</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="./images/card2.svg"></a>
+                <div>
+                    <p style="font-weight:bold">The BOO Project</p>
+                    <p>The Bringing Online Open (BOO) project.</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="./images/card3.svg" alt=""></a>
+                <div>
+                    <p style="font-weight:bold">Improved dev enviroment</p>
+                    <p>Integration and use of our API has been updated (12.8)</p>
+                </div>
+            </div>
             
             <div class="next-back">
-                <a onclick="plusDivs(-1)" class="back"><img src="./images/back.svg" ></a>
-                <a onclick="plusDivs(1)" class="next"><img src="./images/next.svg"  ></a>
+                <a onclick="changeSlide(-1)" class="back"><img src="./images/back.svg" ></a>
+                <a onclick="changeSlide(1)" class="next"><img src="./images/next.svg"  ></a>
             </div>
         </div>
         <div class="rotate">
@@ -100,26 +123,66 @@
         </div>
     </section>
     <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-        
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-      
-        function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("card");
-          if (n > x.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
+
+        var slideStartAt = 0;
+        var numOfSlides = 3;
+        var cards = document.getElementsByClassName("card");
+        var numOfAllCards =  6;
+         function changeSlide(n) {
+          slideStartAt += n;
+          console.log('slideStartAt', slideStartAt)
+          if(slideStartAt < 0 && slideStartAt + numOfSlides >= numOfAllCards) {
+              if(slideStartAt < 0) {
+                document.getElementsByClassName('back').setAttribute('disabled', true)
+              }
+              else document.getElementsByClassName('next').setAttribute('disabled', true)
           }
-          x[slideIndex-1].style.display = "flex";  
-          
+          for (var i = 0; i < 6; i++) {
+            
+            if(i >= slideStartAt && i < slideStartAt + numOfSlides)
+            cards[i].style.display = "flex";
+
+            else cards[i].style.display = "none";
+
+          }
+          }
+     
+        function myFunction() {
+        console.log(cards)
+        console.log('cards[0]', cards[0] )
+        for (var i = slideStartAt; i < numOfSlides; i++) {
+            cards[i].style.display = "flex";   
+            console.log('hello hello')
+          }
+        // var slideIndex = 1;
+        // showDivs(slideIndex);
+        // function changeSlide(n) {
+        //   showDivs(slideIndex += n);
+        // }
+      
+        // function showDivs(n) {
+        //   var i;
+        //   var cards = document.getElementsByClassName("card");
+        //   if (n > cards.length) {slideIndex = 1}    
+        //   if (n < 1) {slideIndex = cards.length}
+        //   for (i = 0; i < card.length; i++) {
+        //     cards[i].style.display = "none";  
+        //   }
+        //   cards[slideIndex-1].style.display = "flex";  
+        // }
+
         }
+       
     </script>
 
 </body>
 
 </html>
+
+
+
+
+
+
+
+
