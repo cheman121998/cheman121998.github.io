@@ -295,6 +295,9 @@ header .logo img{
     .btn-menu{
         display: none;
     }
+    .text-content h1{
+        width: auto; 
+    }
    
   #check:checked ~ .nav{
     left: 0;
