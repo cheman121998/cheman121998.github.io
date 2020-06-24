@@ -123,23 +123,53 @@
         </div>
     </section>
    
-<script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-    function changeSlide(n) {
-      showSlides(slideIndex += n);
-    }
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("card");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-      }
-      slides[slideIndex-1].style.display = "flex"; 
-    }
-</script>
+    <script>
+       
+        // var slideIndex = 1;
+        // showSlides(slideIndex);
+        
+        //    function showSlides(n) {
+        //      var i;
+        //      var slides = document.getElementsByClassName("card");
+        //      if (n > slides.length) {slideIndex = 1}    
+        //      if (n < 1) {slideIndex = slides.length}
+        //      for (i = 0; i < slides.length; i++) {
+        //          slides[i].style.display = "none";  
+        //      }
+        //      slides[slideIndex-1].style.display = "flex"; 
+        //    }
+        //    function changeSlide(n){
+        //    var arr2 = slides.slice(showSlides(slideIndex += n),3);
+        // }
+       
+       </script>
+       <script>
+        var startIndex = 0;
+          var numOfSlideShowed = window.innerWidth > 600 ? 3 : 1;
+          var slides = document.getElementsByClassName("card");
+      
+          showSlides(startIndex);
+      
+          function changeSlide(n)
+      
+            {
+                var currentStartIndex = startIndex + n;
+                if(currentStartIndex >= 0 && currentStartIndex + numOfSlideShowed <= slides.length ) {
+                    startIndex = currentStartIndex;
+                    showSlides(startIndex);
+                }  
+            }
+      
+          function showSlides(index) {
+            var i;
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = index; i < index + numOfSlideShowed; i++) {
+              slides[i].style.display = "flex"; 
+            }
+          }
+      </script>
 </body>
 
 </html>
