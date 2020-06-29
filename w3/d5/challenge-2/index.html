@@ -20,8 +20,6 @@
 
 </script>
 
-
-
 <!-- next: SHOW thằng bên cạnh thằng CUỐI cùng đang hiển thị, ẨN thằng ĐẦU TIÊN đang hiển thị
 back: SHOW thằng bên cạnh thằng ĐẦU TIÊN cùng đang hiển thị, ẨN thằng CUỐI CÙNG đang hiển thị
 
@@ -120,4 +118,21 @@ in ra màn hình mảng B để check kết quả -->
         slides[i].style.display = "flex"; 
       }
     }
+</script>
+<script>
+  var A = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  var B = [3, 4, 5];
+  const nextSlide = () => {
+    var bNext = B;
+    //Biến đổi code dô đây
+    //Khi click vào nút next thì hiển thị item tiếp theo của mảng B, ẩn item đầu tiên của mảng B
+    
+
+    return bNext;
+  }
+  const backSlide = () =>{
+    var bBack =  B;
+    //Biến đổi code dô đây
+    return bBack;
+  }
 </script>

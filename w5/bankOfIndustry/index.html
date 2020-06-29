@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bank Of Industry</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+               <a class="logo" href="#"><img  src="./images/BOI_logo@2x.png" alt="Logo"></a>
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                    <div>Search Bank of industry</div>
+                </div>
+                <div class="list-contact">
+                    <i class="fa fa-twitter-square"></i>
+                    <i class="fa fa-facebook-square"></i>
+                    <i class="fa fa-google-plus-square"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+                <div class="contact">
+                    <span>Contact:</span>
+                    <span>+(234) 7002255264    customercare@boi.ng</span>
+                </div>
+                <div>
+                    <i class="fa fa-moon"></i>
+                    <i class="fa fa-bars" onclick="openMenu()"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section >
+        <div class="container">
+            <div class="menu-bar">
+                <a href="#">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">About
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Product/Fund
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Customer/Care
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Media
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <a href="#">Contact Us</a>
+                <a href="#">Quick Links</a>
+                <a href="#">Publications</a>
+            </div>
+        </div>
+    </section>
+    <section class="banner">
+        <div class="mask-cover"></div>
+        <div class="container">
+            <div>Our Blog</div>
+            <h1>BoI officials visit set of Steph Nora Okere’s ‘Roberta’</h1>
+            <button>Read more <i class="fa fa-chevron-right"></i></button>
+        </div>
+    </section>
+    <section >
+        <div class="container">
+            <div class="list-item">
+                <div class="col-list">
+                    <div class="item-img"><img src="./images/save-money.svg" alt=""></div>
+                    <div>
+                        <h6>Matching Fund</h6>
+                        <p>Get started with the Bank of Industry in getting loans.</p>
+                        <button>Read more <i class="fa fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="col-list">
+                    <div class="item-img"><img src="./images/bars.svg" alt=""></div>
+                    <div>
+                        <h6>Managing Fund</h6>
+                        <p>Learn more to know how to manage your funding.</p>
+                        <button>Read more <i class="fa fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="col-list">
+                    <div class="item-img"><img src="./images/box.svg" alt=""></div>
+                    <div>
+                        <h6>BOI Product</h6>
+                        <p>Check out our amazing products across boards.</p>
+                        <button>Read more <i class="fa fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function openMenu(){
+            document.getElementById('menu-bar').style.display = "block";
+        }
+        function closeMenu(){
+            document.getElementById('menu-bar').style.display = "none";
+        }
+    </script>
+</body>
+</html>

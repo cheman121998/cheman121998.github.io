@@ -113,8 +113,8 @@
             </div>
             
             <div class="next-back">
-                <a onclick="changeSlide(-1)" class="back"><img src="./images/back.svg" ></a>
-                <a onclick="changeSlide(1)" class="next"><img src="./images/next.svg"  ></a>
+                <a onclick="backSlide()" class="back"><img src="./images/back.svg" ></a>
+                <a onclick="nextSlide()" class="next"><img src="./images/next.svg"  ></a>
             </div>
         </div>
         <div class="rotate">
@@ -144,31 +144,51 @@
        
        </script>
        <script>
-        var startIndex = 0;
-          var numOfSlideShowed = window.innerWidth > 600 ? 3 : 1;
-          var slides = document.getElementsByClassName("card");
+
+                var a = [1,2,3,4,5,6,7,8,9];
+                var b = [3,4,5];
+            
+                const nextSlide = () =>{
+                    b = b.map(item => item + 1) 
+                    console.log('b', b) 
+                }
+            
+                const backSlide = () => {
+                    b = b.map(item => item -1);
+                    console.log('b', b);
+                }
+            
+                // let bNext = b;
+                // var i; 
+                // bNext += bNext[i+1];
+                // return bNext;
+            
+
+        // var startIndex = 0;
+        //   var numOfSlideShowed = window.innerWidth > 600 ? 3 : 1;
+        //   var slides = document.getElementsByClassName("card");
       
-          showSlides(startIndex);
+        //   showSlides(startIndex);
       
-          function changeSlide(n)
+        //   function changeSlide(n)
       
-            {
-                var currentStartIndex = startIndex + n;
-                if(currentStartIndex >= 0 && currentStartIndex + numOfSlideShowed <= slides.length ) {
-                    startIndex = currentStartIndex;
-                    showSlides(startIndex);
-                }  
-            }
+        //     {
+        //         var currentStartIndex = startIndex + n;
+        //         if(currentStartIndex >= 0 && currentStartIndex + numOfSlideShowed <= slides.length ) {
+        //             startIndex = currentStartIndex;
+        //             showSlides(startIndex);
+        //         }  
+        //     }
       
-          function showSlides(index) {
-            var i;
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            for (i = index; i < index + numOfSlideShowed; i++) {
-              slides[i].style.display = "flex"; 
-            }
-          }
+        //   function showSlides(index) {
+        //     var i;
+        //     for (i = 0; i < slides.length; i++) {
+        //         slides[i].style.display = "none";  
+        //     }
+        //     for (i = index; i < index + numOfSlideShowed; i++) {
+        //       slides[i].style.display = "flex"; 
+        //     }
+        //   }
       </script>
 </body>
 
