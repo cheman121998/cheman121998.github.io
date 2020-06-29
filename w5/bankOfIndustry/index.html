@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Bank Of Industry</title>
 </head>
-<body>
+<body id="light">
     <header>
         <div class="container">
             <div class="header">
@@ -29,12 +29,12 @@
                 </div>
                 <div>
                     <i class="fa fa-moon"></i>
-                    <i class="fa fa-bars" onclick="openMenu()"></i>
+                    <i class="fa fa-bars" onclick="darkLightMode()"></i>
                 </div>
             </div>
         </div>
     </header>
-    <section >
+    <section class="menu">
         <div class="container">
             <div class="menu-bar">
                 <a href="#">Home</a>
@@ -92,7 +92,7 @@
             <button>Read more <i class="fa fa-chevron-right"></i></button>
         </div>
     </section>
-    <section >
+    <section class="list">
         <div class="container">
             <div class="list-item">
                 <div class="col-list">
@@ -123,12 +123,16 @@
         </div>
     </section>
     <script>
-        function openMenu(){
-            document.getElementById('menu-bar').style.display = "block";
-        }
-        function closeMenu(){
-            document.getElementById('menu-bar').style.display = "none";
-        }
+        // function openMenu(){
+        //     document.getElementById('menu-bar').style.display = "block";
+        // }
+        // function closeMenu(){
+        //     document.getElementById('menu-bar').style.display = "none";
+        // }
+            function darkLightMode(){
+            var bodyElement = document.body;
+            bodyElement.id = bodyElement.id === "light" ? 'dark' : 'light';
+            }
     </script>
 </body>
 </html>
