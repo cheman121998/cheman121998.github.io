@@ -1,5 +1,6 @@
 * {
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 body, a, button {
     font-family: 'Roboto', sans-serif;
@@ -44,6 +45,9 @@ body{
 .search i{
     margin-right: 16px;
 }
+/* .contact {
+    font-size: 14px;
+} */
 .list-contact{
     margin: 0 6px;
     font-size: 25px;
@@ -98,19 +102,23 @@ display: block;
 .menu-bar a {
 text-decoration: none;
 color: #000000;
-font-size: 14px;
-
 }
 .menu-bar button{
     border: none;
     background: none;
-    font-size: 14px;
     cursor: pointer;
 }
 .menu-bar a:hover{
     border-bottom: 3px solid #006C33;
     color: #006C33;
     transition: cubic-bezier(1, 0, 0, 1);
+}
+
+header .container .header .fa.fa-bars {
+    border: 1px solid #e5dada;
+    border-radius: 50%;
+    padding: 9px;
+    color: #006C33;
 }
 
 /* Style Banner */
@@ -157,7 +165,6 @@ section.banner{
     padding: 0; 
     border-radius: 4px;
     color: white;
-    font-size: 14px;
     margin-top: 42px;
     cursor: pointer;
 }
@@ -199,7 +206,6 @@ section.banner{
     background: none;
     border: none;
     color: #006C33;
-    font-size: 14px;
     font-weight: bold;
     padding: 0;
     cursor: pointer;
@@ -214,7 +220,6 @@ section.banner{
     margin-bottom: 10px!important;
 }
 .list-item .col-list p{
-    font-size: 14px;    
     overflow: hidden;
     height: 16px;
 }
