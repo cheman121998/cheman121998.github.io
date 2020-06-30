@@ -10,8 +10,6 @@ button:active, button:focus{
 }
 body{
     margin: 0;
-    max-width: 1440px;
-    min-height: 476px;
 }
 .container{
     margin: 0 140px;
@@ -176,7 +174,7 @@ section.banner{
     width: 67%;
     
 }
-.banner .container button{
+.banner .container .main-btn{
     background: transparent;
     border: 1px solid white;
     height: 44px;
@@ -187,10 +185,10 @@ section.banner{
     margin-top: 42px;
     cursor: pointer;
 }
-.banner .container button i {
+.banner .container .main-btn i {
     margin-left: 16px;
 }
-.banner .container button:hover{
+.banner .container .main-btn:hover{
     background: #006C33;
     transition: cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -285,10 +283,57 @@ color: white;
 #dark .list-item .col-list button {
     color: #B77C18;
 }
-#dark .banner .container button:hover {
+#dark .banner .container .main-btn:hover {
     background: #B77C18;
 }
 #dark .dropdown-content {
     background: #B77C18;
     color: #ffffff;
+}
+/* Style SLide show */
+.btn-left, .btn-right{
+    cursor: pointer;
+    height: 80px;
+    width: 32px;
+    opacity: 24%;
+    color: white;
+    font-size: 20px;
+    background: #707070;
+    border: none;
+    outline: none;
+    z-index: 1;
+}
+.btn-left:hover, .btn-right:hover{
+    opacity: 0.9;
+    transition: ease-in-out;
+}
+.btn-badge {
+    cursor: pointer;
+    height:13px;
+    width:13px;
+    padding:0;
+}
+.btn-badge{
+    background-color:#707070;
+    color:#fff;
+    display:inline-block;
+    margin-left: 8px;
+    margin-right:8px;
+    text-align:center;
+    border-radius:50%;
+}
+.btn-badge:hover{
+    background-color: #ffffff;
+    transition: ease-in-out;
+}
+.banner .container {
+    position: relative;
+}
+.list-btn{
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+}
+.fa-pause{
+    cursor: pointer;
 }

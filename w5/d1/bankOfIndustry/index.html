@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Bank Of Industry</title>
 </head>
+
 <body id="light">
     <header>
         <div class="container">
             <div class="header">
-               <a class="logo" href="#"><img  src="./images/BOI_logo@2x.png" alt="Logo"></a>
+                <a class="logo" href="#"><img src="./images/BOI_logo@2x.png" alt="Logo"></a>
                 <div class="search">
                     <i class="fa fa-search"></i>
                     <input placeholder="Search Bank of industry"></input>
@@ -25,7 +28,7 @@
                 </div>
                 <div class="contact">
                     <span>Contact:</span>
-                    <span>+(234) 7002255264    customercare@boi.ng</span>
+                    <span>+(234) 7002255264 customercare@boi.ng</span>
                 </div>
                 <div>
                     <i class="fa fa-moon"></i>
@@ -40,42 +43,42 @@
                 <a href="#">Home</a>
                 <div class="dropdown">
                     <button class="dropbtn">About
-                    <i class="fa fa-caret-down"></i>
+                        <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn">Product/Fund
-                      <i class="fa fa-caret-down"></i>
+                        <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn">Customer/Care
-                      <i class="fa fa-caret-down"></i>
+                        <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn">Media
-                      <i class="fa fa-caret-down"></i>
+                        <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
                     </div>
                 </div>
                 <a href="#">Contact Us</a>
@@ -85,12 +88,33 @@
         </div>
     </section>
     <section class="banner">
+       
+            <button class="btn-left" onclick="plusDivs(-1)">&#10094;</button>
+      
         <div class="mask-cover"></div>
         <div class="container">
             <div>Our Blog</div>
             <h1>BoI officials visit set of Steph Nora Okere’s ‘Roberta’</h1>
-            <button>Read more <i class="fa fa-chevron-right"></i></button>
+            <!-- <div class="next-back"> 
+                <button class="btn-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="btn-right" onclick="plusDivs(1)">&#10095;</button>
+            </div> -->
+            <button class="main-btn">Read more <i class="fa fa-chevron-right"></i></button>
+
+            
+            <div class="list-btn">
+                <span class="fa fa-pause"></span>
+                <span class="btn-badge" onclick="currentDiv(1)"></span>
+                <span class="btn-badge" onclick="currentDiv(2)"></span>
+                <span class="btn-badge" onclick="currentDiv(3)"></span>
+                <span class="btn-badge" onclick="currentDiv(4)"></span>
+                <span class="btn-badge" onclick="currentDiv(5)"></span>
+                <span class="btn-badge" onclick="currentDiv(6)"></span>
+            </div>
         </div>
+        
+            <button class="btn-right" onclick="plusDivs(1)">&#10095;</button>
+       
     </section>
     <section class="list">
         <div class="container">
@@ -123,10 +147,11 @@
         </div>
     </section>
     <script>
-            function darkLightMode(){
+        function darkLightMode() {
             var bodyElement = document.body;
             bodyElement.id = bodyElement.id === "light" ? 'dark' : 'light';
-            }
+        }
     </script>
 </body>
+
 </html>
