@@ -337,3 +337,9 @@ color: white;
 .fa-pause{
     cursor: pointer;
 }
+
+.next-back{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

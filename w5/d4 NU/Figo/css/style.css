@@ -1,0 +1,102 @@
+
+font-family: 'Open Sans', sans-serif;
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('../images/Design\ Elements.png');
+    overflow: hidden;
+    overflow-x: hidden;
+}
+body, input, button{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+}
+h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    color: #FEBD00;
+    letter-spacing: 1px;
+}
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1170px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav button {
+    display: none;
+}
+header a img{
+    height: 48px;
+    width: 84px;
+}
+ul {
+   display: flex;
+   justify-content: space-between;
+    list-style: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+   
+}
+ul li{
+    margin: 0 25px;
+}
+.intro-text{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+.intro-text h6{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.intro-text .img-content{
+    width: 680px;
+    height: 680px;
+}
+.intro-text .img-content img{
+    width: 100%;
+}
+.intro-text input[type="text"] {
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+    background: #ffffff;
+    border-radius: 5px;
+    height: 60px;
+    width: 350px;
+    box-shadow: 10px 0px 10px #F4F5F4;
+    padding-left: 30px;
+    font-size: 18px;
+    color: #B7B7B7;
+}
+
+.intro-text button {
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 166px;
+    height: 60px;
+    background: #8CB560;
+    color: white;
+    font-size: 16px;
+    margin-left: 20px;
+    font-weight: bold;
+    box-shadow: 10px 0 10px #ffffff;
+}
