@@ -27,6 +27,12 @@ h4{
     font-size: 28px;
     color: #FEBD00;
     letter-spacing: 1px;
+    font-weight: 300;
+}
+h6 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
 }
 .container{
     margin: 0 auto;
@@ -45,7 +51,7 @@ header a img{
     height: 48px;
     width: 84px;
 }
-ul {
+.header-content ul {
    display: flex;
    justify-content: space-between;
     list-style: none;
@@ -54,7 +60,7 @@ ul {
     font-weight: bold;
    
 }
-ul li{
+.header-content ul li{
     margin: 0 25px;
 }
 .intro-text{
@@ -98,5 +104,135 @@ ul li{
     font-size: 16px;
     margin-left: 20px;
     font-weight: bold;
-    box-shadow: 10px 0 10px #ffffff;
+    box-shadow: 10px 0 10px #F4F5F4;
+    cursor: pointer;
+}
+.welcome{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    letter-spacing: 1px;
+}
+.welcome p{
+    font-size: 18px;
+}
+.welcome button {
+    height: 70px;
+    font-size: 18px;
+    border: none;
+    width: 220px;
+    background: #8CB560;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.welcome h4{
+    margin-top: 0;
+}
+section#reason{
+    text-align: center;
+}
+#reason .row {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: space-between;
+}
+
+#reason img{
+    width: 70px;
+    height: 70px;
+}
+#reason .col-3{
+    margin-right: 10px;
+    background: #F8FBF5;
+    height: 348px;
+    width: 370px;
+}
+#reason h6 {
+    margin: 25px;
+}
+#reason p{
+    padding: 0 32px;
+}
+
+#browse{
+    text-align: center;
+}
+#browse .row {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+#browse ul {
+    list-style-type: none;
+    text-align: left;
+    font-size: 18px;
+    color: #979797;
+}
+#browse ul li {
+    padding: 14px 0;
+}
+#browse ul li:hover {
+    color:#FEBD00;
+}
+#browse img{
+    width: 270px;
+    height: 240px;
+}
+#browse h6{
+    font-size: 22px;
+    margin: 6px;
+}
+#browse .col-4{
+    box-shadow: 10px 10px 10px #fbfbfbfb;
+    height: 350px;
+    width: 270px;
+}
+#browse .price1{
+    font-size: 22px;
+    color:#59882B;
+    font-weight: 600;
+}
+#browse .price2{
+    color: #979797;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+.list-btn button {
+    background: orange;
+    border: 1px solid orange;
+    color: white;
+    cursor: pointer;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+.history-img{
+    background: #F8FBF5;
+    width: 560px;
+    height: 480px;
+    text-align: center;
+}
+#history h4{
+    margin-top: 0;
+}
+.history p{
+    letter-spacing: 1px;
+}
+.history button {
+    height: 70px;
+    font-size: 18px;
+    border: none;
+    width: 220px;
+    background: #8CB560;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.test-title{
+    text-align: center;
 }
