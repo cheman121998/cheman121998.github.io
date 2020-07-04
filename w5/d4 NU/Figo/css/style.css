@@ -63,7 +63,7 @@ header a img{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     font-weight: bold;
-   
+    align-items: center;
 }
 .header-content ul li{
     margin: 0 25px;
@@ -119,8 +119,9 @@ header a img{
 .welcome{
     display: grid;
     grid-template-columns: 50% 50%;
-    align-items: center;
+   
     letter-spacing: 1px;
+    position: relative;
 }
 .welcome p{
     font-size: 18px;
@@ -135,6 +136,8 @@ header a img{
     color: white;
     font-weight: bold;
     cursor: pointer;
+    position: absolute;
+    bottom: 0;
 }
 .welcome button:hover {
     background: #FEBD00;
