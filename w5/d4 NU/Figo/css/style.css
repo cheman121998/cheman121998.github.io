@@ -11,7 +11,7 @@ input, button{
    
 }
 section, header{
-    margin-bottom: 142px;
+    padding-bottom: 142px;
 }
 button:focus, button:active{
     outline: none;
@@ -173,6 +173,7 @@ section#reason{
 #reason img{
     width: 70px;
     height: 70px;
+    margin-top: 20px;
 }
 #reason .col-3{
     margin-right: 10px;
@@ -180,8 +181,13 @@ section#reason{
     height: 348px;
     width: 370px;
 }
-#reason h6 {
-    margin: 25px;
+#reason .col-3:hover{
+    background: #ffffff;
+    border-bottom: 3px solid #59882B;
+    transition: ease cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#reason h4 {
+    margin: 10px;
 }
 #reason p{
     padding: 0 32px;
@@ -466,8 +472,11 @@ footer .col-4:first-child{
 
  /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
+    header{
+        margin-top: 30px;
+    }
     .container{
-        margin: 0 32px;
+        padding: 0 32px;
     }
     .intro-text{
         display: block;
@@ -479,9 +488,17 @@ footer .col-4:first-child{
     }
     .intro-text button{
         font-size: 14px;
+        height: 40px;
+        width: 100px;
     }
     .intro-text .img-content{
         height: auto;
+    }
+    .intro-text input[type="text"] {
+        height: 40px;
+        width: 200px;
+        padding-left: 0;
+        font-size: 14px;
     }
     .welcome .welcome-img {
         height: 350px;
@@ -500,7 +517,7 @@ footer .col-4:first-child{
         width: 200px;
     }
     .history-img {
-        width: 380px;
+        width: 400px;
         margin-top: 120px;
     }
     #testimonials .row .col-5 {
