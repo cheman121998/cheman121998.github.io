@@ -68,6 +68,14 @@ header a img{
 .header-content ul li{
     margin: 0 25px;
 }
+.header-content ul li a{
+    text-decoration: none;
+    color: #000000;
+
+}
+.header-content ul li a:hover{
+    opacity: 0.2;
+}
 .intro-text{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -269,7 +277,6 @@ button.btn-next {
     background: #F8FBF5;
     width: 560px;
     height: 480px;
-    text-align: center;
 }
 #history h4{
     margin-top: 0;
@@ -455,3 +462,100 @@ footer .col-4:first-child{
     height: 86%;
     width: 90%;
 }
+
+
+ /* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .container{
+        margin: 0 32px;
+    }
+    .intro-text{
+        display: block;
+        text-align: center;
+    }
+    .btn-get-started {
+        display: flex;
+
+    }
+    .intro-text button{
+        font-size: 14px;
+    }
+    .intro-text .img-content{
+        height: auto;
+    }
+    .welcome .welcome-img {
+        height: 350px;
+    }
+    .welcome button {
+        bottom: auto;
+    }
+    #reason .row {
+        display: block;
+    }
+    #browse img {
+        width: 200px;
+        height: 180px;
+    }
+    #browse .col-4 {
+        width: 200px;
+    }
+    .history-img {
+        width: 380px;
+        margin-top: 120px;
+    }
+    #testimonials .row .col-5 {
+        height: 184px;
+        width: 100%;
+        margin-top: 50px;
+        transform: translate(0px, 0px)!important;
+    }
+    .sub input {
+    height: 50px;
+    font-size: 12px;
+    width: 220px;
+    }
+    .sub button{
+        top: 0;
+        left: 71%;
+    }
+    .nav{
+        display: none;
+    }
+    .intro-text h1{
+         font-size: 32px;
+    }
+    .intro-text .img-content{
+        width: 380px;
+    }
+    .welcome {
+        display: block;
+    }
+    #browse .row {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .history{
+        display: block;
+    }
+    
+    .history button{
+        bottom: auto;
+    } 
+    #news .row {
+        display:block;
+    }
+    #testimonials .row{
+        display: block;
+    }
+    footer .row{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        font-size: 14px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+}
+
