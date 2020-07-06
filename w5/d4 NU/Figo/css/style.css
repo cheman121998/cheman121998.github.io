@@ -1,14 +1,14 @@
 
-font-family: 'Open Sans', sans-serif;
-
 body{
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: url('../images/Design\ Elements.png');
-}
-body, input, button{
-    font-family: 'Poppins', sans-serif;
+    margin: 0!important;
+    font-family: 'Poppins', sans-serif; 
     overflow-x: hidden;
+    background: url('../images/bgr.png') no-repeat;
+    background-size: cover;
+}
+input, button{
+    font-family: 'Poppins', sans-serif;
+   
 }
 section, header{
     margin-bottom: 142px;
@@ -123,6 +123,12 @@ header a img{
     letter-spacing: 1px;
     position: relative;
 }
+.welcome .welcome-img {
+    height: 524px;
+}
+.welcome .welcome-img img{
+    height: 100%;
+}
 .welcome p{
     font-size: 18px;
 }
@@ -215,6 +221,32 @@ section#reason{
     font-size: 14px;
     text-decoration: line-through;
 }
+#browse .browse-btn{
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+}
+button.btn-pre, button.btn-next {
+    border-radius: 25px 0 0 25px;
+    background: linear-gradient(to right, #8BB45E, #59882B);
+    height: 50px;
+    width: 50px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin-right: 20px;
+}
+button.btn-pre:hover, button.btn-next:hover {
+    background: white;
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    color: #59882b;
+    box-shadow: 10px 0 10px #B7B7B7;
+}
+button.btn-next {
+    border-radius: 0 25px  25px 0;
+}
+
+
 .list-btn button {
     background: orange;
     border: 1px solid orange;
@@ -228,7 +260,8 @@ section#reason{
 .history {
     display: grid;
     grid-template-columns: 50% 50%;
-    align-items: center;
+    /* align-items: center; */
+    position: relative;
 }
 .history-img{
     background: #F8FBF5;
@@ -252,6 +285,8 @@ section#reason{
     color: white;
     font-weight: bold;
     cursor: pointer;
+    position: absolute;
+    bottom: 0;
 }
 .history button:hover {
     background: #FEBD00;
@@ -285,6 +320,64 @@ section#reason{
     opacity: 0.8;
     transition: cubic-bezier(0.39, 0.575, 0.565, 1);
 }
+#testimonials .row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+#testimonials .row .col-5{
+    height: 184px;
+    width: 30%;
+}
+#testimonials .card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+#testimonials .card img{
+    height: 60px;
+    width: 60px;
+    margin-right: 8px;
+    object-fit: cover;
+    margin-top: 25px;
+}
+#testimonials .name{
+    font-size: 16px;
+    font-weight: bold;
+}
+#testimonials .job{
+    font-size: 14px;
+    font-style: italic;
+}
+#testimonials .bubble{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    width: 342px;
+    height: 64px;
+    position: relative;
+    line-height: 20px;
+    border-radius: 5px;
+    padding: 24px;
+    text-align: justify;
+    box-shadow: 0px 2px 30px #dfdcdc;
+    display: flex;
+    align-items: center;
+}
+#testimonials .bubble-bottom-left:before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid #fff;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #fff;
+    border-bottom: 20px solid transparent;
+    left: 32px;
+    bottom: -24px;
+}
+
 .sub{
     text-align: center;
 }
@@ -309,6 +402,8 @@ section#reason{
     background-image: linear-gradient(to right, #8cb560, #59882b);
     position: absolute;
     cursor: pointer;
+    top: 5px;
+    left: 69%;
 }
 .sub button:hover {
     transition: ease 0.2s;
