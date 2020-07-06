@@ -225,6 +225,7 @@ section#reason{
     position: absolute;
     right: 0;
     margin-top: 20px;
+   
 }
 button.btn-pre, button.btn-next {
     border-radius: 25px 0 0 25px;
@@ -235,6 +236,7 @@ button.btn-pre, button.btn-next {
     font-size: 20px;
     border: none;
     margin-right: 20px;
+    cursor: pointer;
 }
 button.btn-pre:hover, button.btn-next:hover {
     background: white;
@@ -319,6 +321,9 @@ button.btn-next {
 #news button:hover {
     opacity: 0.8;
     transition: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+section#testimonials{
+    margin-bottom: 200px;
 }
 #testimonials .row{
     display: flex;
@@ -409,6 +414,10 @@ button.btn-next {
     transition: ease 0.2s;
     background: #FEBD00;
 }
+footer {
+    background: #F8FBF5;
+    padding: 100px 0;
+}
 footer .row{
     display: grid;
     grid-template-columns: 40% 20% 20% 20%;
@@ -439,4 +448,10 @@ cursor: pointer;
 footer .list-btn button:hover{
     transition: ease-in 0.2s;
     opacity: 0.2;
+}
+
+footer .col-4:first-child{
+    display: grid;
+    height: 86%;
+    width: 90%;
 }
