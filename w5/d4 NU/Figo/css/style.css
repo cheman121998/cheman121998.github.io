@@ -41,6 +41,7 @@ h6 {
 }
 .container{
     margin: 0 auto;
+    padding: 0 15px;
     width: 100%;
     max-width: 1170px;
 }
@@ -119,10 +120,11 @@ header a img{
     font-weight: bold;
     box-shadow: 10px 0 10px #F4F5F4;
     cursor: pointer;
+    transition:  0.3s ease;
 }
 .intro-text button:hover {
     background: #FEBD00;
-    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) ;
+    opacity: 0.6;
 }
 .welcome{
     display: grid;
@@ -152,11 +154,12 @@ header a img{
     cursor: pointer;
     position: absolute;
     bottom: 0;
+    transition:  0.3s ease;
 }
 .welcome button:hover {
     background: #FEBD00;
     opacity: 0.6;
-    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+   
 }
 .welcome h4{
     margin-top: 0;
@@ -251,12 +254,13 @@ button.btn-pre, button.btn-next {
     border: none;
     margin-right: 20px;
     cursor: pointer;
+    transition:  0.3s ease;
 }
 button.btn-pre:hover, button.btn-next:hover {
     background: white;
-    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
     color: #59882b;
     box-shadow: 10px 0 10px #B7B7B7;
+    opacity: 0.6;
 }
 button.btn-next {
     border-radius: 0 25px  25px 0;
@@ -268,10 +272,10 @@ button.btn-next {
     border: 1px solid orange;
     color: white;
     cursor: pointer;
+    transition:  0.3s ease;
 }
 .list-btn button:hover {
     opacity: 0.2;
-    transition: cubic-bezier(0.6, 0.04, 0.98, 0.335);
 }
 .history {
     display: grid;
@@ -302,11 +306,11 @@ button.btn-next {
     cursor: pointer;
     position: absolute;
     bottom: 0;
+    transition:  0.3s ease;
 }
 .history button:hover {
     background: #FEBD00;
     opacity: 0.6;
-    transition: cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 .test-title{
     text-align: center;
@@ -330,11 +334,11 @@ button.btn-next {
     font-weight: 800;
     padding: 0; 
     cursor: pointer;
+    transition:  0.3s ease;
 }
 #news button:hover {
     opacity: 0.8;
-    transition: cubic-bezier(0.39, 0.575, 0.565, 1);
-}
+  }
 section#testimonials{
     margin-bottom: 200px;
 }
@@ -353,13 +357,13 @@ section#testimonials{
     flex-wrap: wrap;
     align-items: center;
     font-family: 'Open Sans', sans-serif;
+    margin-top: 25px;
 }
 #testimonials .card img{
     height: 60px;
     width: 60px;
     margin-right: 8px;
     object-fit: cover;
-    margin-top: 25px;
 }
 #testimonials .name{
     font-size: 16px;
@@ -422,9 +426,11 @@ section#testimonials{
     cursor: pointer;
     top: 5px;
     left: 69%;
+    transition: ease 0.3s;
+    transition:  0.3s ease;
 }
 .sub button:hover {
-    transition: ease 0.2s;
+    opacity: 0.6;
     background: #FEBD00;
 }
 footer {
@@ -448,6 +454,10 @@ footer ul {
 footer ul li {
     padding-bottom: 32px;
 }
+footer ul li a{
+    text-decoration: none;
+    color: #000000;
+}
 footer .list-title{
     font-weight: bold;
     font-size: 24px;
@@ -457,9 +467,9 @@ background: orange;
 border: 1px solid orange;
 color: white;
 cursor: pointer;
+transition: ease-in 0.2s;
 }
 footer .list-btn button:hover{
-    transition: ease-in 0.2s;
     opacity: 0.2;
 }
 
@@ -490,6 +500,10 @@ footer .col-4:first-child{
         font-size: 14px;
         height: 40px;
         width: 100px;
+        transition: ease 0.3s;
+    }
+    .intro-text button:hover{
+        opacity: 0.6;
     }
     .intro-text .img-content{
         height: auto;
@@ -569,10 +583,105 @@ footer .col-4:first-child{
         grid-template-columns: 50% 50%;
         font-size: 14px;
     }
+    #testimonials .bubble{
+        width: 80%;
+    }
+    #news col-3{
+        width: 340px;
+    }
+    #news img{
+        width: 100%;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) { 
-
+@media (min-width: 576px) and (max-width: 768px) { 
+    .intro-text h1{
+        font-size: 46px;
+    }
+    .intro-text button{
+        font-size: 14px;
+        width: 130px;
+    }
+    .intro-text input[type="text"] {
+        width: 196px;
+        font-size: 14px;
+        padding-left: 0;
+    }
+    .intro-text .img-content {
+        width: 450px;
+        height: 450px;
+    }
+    .welcome .welcome-img {
+        height: 330px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    h3{
+        font-size: 30px;
+        margin: 20px 0;
+    }
+    .welcome p {
+        font-size: 12px;
+    }
+    .welcome button{
+        font-size: 12px;
+        height: 30px;
+        width: 120px;
+    }
+    #reason .col-3 {
+        height: 280px;
+        width: 250px;
+    }
+    #reason img {
+        width: 50px;
+        padding-top: 10px;
+    }
+    #reason h6{
+        margin: 20px 0;
+        font-size: 20px;
+    }
+    #reason p{
+        font-size: 14px;
+    }
+    #browse .col-4 {
+        width: 200px;
+    }
+    #browse img {
+        width: 220px;
+        height: 200px;
+    }
+    .history-img {
+        width: 400px;
+    }
+    #testimonials .row {
+        justify-content: center;
+    }
+    #testimonials .row .col-5 {
+        height: 184px;
+        width: 50%;
+        margin-bottom: 40px;
+        transition: translate(0,0);
+        transform: translate(0px, 0px)!important;
+    }
+    section#testimonials {
+        margin-bottom: 0;
+    }
+    #news img{
+        width: 250px;
+    }
+    .sub button {
+        left: 79%;
+    }
+    footer .row {
+        font-size: 14px;
+    }
+    .nav {
+        display: none;
+    }
+    header{
+        padding-top: 50px;
+    }
 }
 
