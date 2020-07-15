@@ -284,10 +284,7 @@ h2{
       #check:checked ~ ul{
         left: 0;
       }
-      #check {
-          display: block;
-          
-      }
+      
 }
 
 

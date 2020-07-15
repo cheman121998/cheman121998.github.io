@@ -1,0 +1,256 @@
+/* font-family: 'Noto Sans TC', sans-serif;
+font-family: 'Roboto', sans-serif; */
+html, 
+body,
+a, p, h1, h3 {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.05rem;
+    color: #ffffff;
+}
+body{
+    margin: 0;
+}
+header{
+    background: url('../images/eye-for-ebony-OWi1sIWiCAI-unsplash.jpg') no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+:focus, :active{
+    outline: none;
+}
+#mainNav{
+    z-index: 2;
+}
+
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+nav .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.masthead{
+    position: relative;
+}
+.mask-cover{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);;
+}
+
+.nav-link{
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0.75em 0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: -1px;
+    position: relative;
+    text-decoration: none;
+}
+a.logo img {
+    width: 96px;
+    height: 34px;
+    object-fit: cover;
+    cursor: pointer;
+}
+a.logo img:hover {
+    opacity: 0.6;
+}
+.navbar-toggler{
+    background: transparent;
+    outline: none;
+    border: none;
+}
+.navbar-toggler i{
+    display: none;
+    font-size: 32px;
+    color: #ffffff;
+    background: none;
+}
+.header-content{
+    z-index: 2;
+    position: relative;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.menu ul li {
+    padding: 0.5rem 1rem;
+}
+.menu ul li:hover {
+    opacity: 0.6;
+}
+button.donate  {
+   font-size: 14px;
+   font-weight: bold;
+    border: 2px solid #B9220A ;
+    background: #B9220A;
+    color: #ffffff;
+    border-radius: 4px;
+    min-height: 52px;
+    padding: 16px 50px;
+    transition: ease 0.2s;
+    cursor: pointer;
+}
+button.donate:hover{
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+.container.intro{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    min-height: calc(100vh - 150px);
+    align-items: center;
+}    
+
+.intro-text h1{
+    font-size: 48px;
+}
+.intro-text p{
+    font-size: 18px;
+    width: 50%;
+    letter-spacing: 0.5px;
+}
+
+button.more{
+    background: transparent;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    min-height: 52px;
+    transition: ease 0.2s;
+    padding: 16px 28px;
+    color: #ffffff;
+    border-radius: 4px;
+    margin-left: 16px;
+    margin-top: 44px;
+    font-size: 14px;
+    font-weight: bold;
+}
+button.more:hover{
+    border: 2px solid #B9220A;
+    background: #B9220A;
+    color: #ffffff;
+}
+.header-content .row{
+    display: flex;
+    width: 100%;
+}
+.header-content .row .col-5{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 54px;
+}
+.our-children{
+    background: url('../images/tetbirt-salim-696162-unsplash.jpg') no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scholarships{
+    background: url('../images/zach-vessels-1289561-unsplash.jpg') no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    padding-left: 100px;
+}
+#banner-item h2{
+    font-size: 28px;
+}
+#banner-item p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    width: 60%;
+}
+
+/* #banner-item{
+    background: url('../images/tetbirt-salim-696162-unsplash.jpg') no-repeat, url('../images/zach-vessels-1289561-unsplash.jpg');
+    
+}
+#banner-item .row{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    min-height: 50vh;
+
+} */
+#banner-item .row{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+.our-children button{
+    border: none;
+    background: #E4C70A;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+    padding: 12px 36px;
+    height: 42px;
+    border-radius: 4px;
+    margin-top: 34px;
+}
+.our-children button:hover{
+    opacity: 0.8;
+    color: #ffffff;
+}
+.scholarships button{
+    border: none;
+    background: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+    padding: 12px 36px;
+    height: 42px;
+    border-radius: 4px;
+    margin-top: 34px;
+}
+.scholarships button:hover{
+    background: grey;
+    color: #ffffff;
+}
+
+
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
