@@ -10,10 +10,10 @@ body{
     margin: 0;
 }
 header{
-    background: url('../images/eye-for-ebony-OWi1sIWiCAI-unsplash.jpg') no-repeat;
+    background: url('../images/eye-for-ebony-OWi1sIWiCAI-unsplash.jpg') no-repeat, url('../images/bailey-torres-lt-JRmS3VrU-unsplash.jpg');
     background-size: cover;
     z-index: 1;
-    
+    background-position: center;
 }
 :focus, :active{
     outline: none;
@@ -340,16 +340,37 @@ button.more:hover{
       }
     div#nav-menu{
         position: absolute;
-        width: 100%;
+        width: 90%;
         height: 100vh;
         text-align: left;
         transition: all .5s;
-        left: -100%;
-        top: 70px;
+  
+        top: -70px;
+        right: -24px;
+        bottom: 0;
         display: block;
         z-index: 100;
-        background-color: #fff;
+        background-color: #B9220A;
     }
+    .nav{
+        display: block;
+    }
+    .nav-menu ul {
+        display: block;
+        line-height: 50px;
+    }
+    #mainNav button.donate{
+      background: #fff;
+      color: #B9220A;
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+      font-size: 12px;
+    }
+    .nav-menu ul li {
+        padding: 0.5rem 0;
+    }
+
  }
 
 @media (min-width: 576px) {
