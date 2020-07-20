@@ -18,9 +18,7 @@ header{
 }
 :focus, :active{
     outline: none;
-}
-#check{
-    display: none;
+    opacity: 0.6;
 }
 #mainNav{
     z-index: 2;
@@ -51,7 +49,9 @@ nav .container{
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);;
 }
-
+a.active{
+    opacity: 0.6;
+}
 .nav-link{
     font-weight: 500;
     font-size: 14px;
@@ -207,16 +207,6 @@ button.more:hover{
     z-index: 2;
 }
 
-/* #banner-item{
-    background: url('../images/tetbirt-salim-696162-unsplash.jpg') no-repeat, url('../images/zach-vessels-1289561-unsplash.jpg');
-    
-}
-#banner-item .row{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    min-height: 50vh;
-
-} */
 #banner-item .row{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -266,31 +256,7 @@ button.more:hover{
     
 }
 /* Style menu-mobile */
-.header ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-    background-color: #fff;
-  }
-  .header .menu {
-    clear: both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-  }
-  
-  /* menu icon */
-  
-  .header .menu-icon {
-    cursor: pointer;
-    display: inline-block;
-    float: right;
-    padding: 28px 20px;
-    position: relative;
-    user-select: none;
-  }
-  
-  .header .menu-icon .navicon {
+.menu-icon .navicon {
     background: #333;
     display: block;
     height: 2px;
@@ -298,60 +264,63 @@ button.more:hover{
     transition: background .2s ease-out;
     width: 18px;
   }
-  
-  .header .menu-icon .navicon:before,
-  .header .menu-icon .navicon:after {
-    background: #333;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-  }
-  
-  .header .menu-icon .navicon:before {
+
+.menu-icon .navicon:before,
+.menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.menu-icon .navicon:before {
     top: 5px;
-  }
+}
   
-  .header .menu-icon .navicon:after {
+.menu-icon .navicon:after {
     top: -5px;
   }
-  
-  /* menu btn */
-  
-  .header .menu-btn {
+/* MENU BTN */
+.menu-btn{
     display: none;
-  }
-  
-  .header .menu-btn:checked ~ .menu {
+}
+.menu-icon{
+    display: none;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    color: #ffffff;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+.menu-btn:checked ~ .menu {
     max-height: 240px;
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .navicon {
+}
+.menu-btn:checked ~ .menu-icon .navicon {
     background: transparent;
   }
-  
-  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+  .menu-btn:checked ~ .menu-icon .navicon:before {
     transform: rotate(-45deg);
   }
-  
-  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+  .menu-btn:checked ~ .menu-icon .navicon:after {
     transform: rotate(45deg);
   }
-  
-  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
   }
+ 
  /* End Style menu-mobile */
 @media (max-width: 575.98px) { 
     header{
         padding: 40px 24px;
     }
-    .nav-menu{
+    /* .nav-menu{
         display: none;
-    }
+    } */
     #mainNav .donate{
         display: none;
     }
@@ -416,16 +385,15 @@ button.more:hover{
     .checkbtn i{
         font-size: 24px;
     }
-    #check:checked ~ div#nav-menu{
+    /* #check:checked ~ div#nav-menu{
         left: 0;
-      }
+      } */
     div#nav-menu{
         position: absolute;
         width: 90%;
         height: 100vh;
         text-align: left;
         transition: all .5s;
-  
         top: -40px;
         right: -24px;
         bottom: 0;
@@ -434,7 +402,7 @@ button.more:hover{
         background-color: #B9220A;
     }
     .nav{
-        display: block;
+        display: none;
     }
     .nav-menu ul {
         display: block;
@@ -457,9 +425,9 @@ button.more:hover{
  
 
 @media (min-width: 576px) {
-    .header .menu-icon {
+    /* .header .menu-icon {
         display: none;
-      }
+      } */
     .container {
       max-width: 540px;
     }
