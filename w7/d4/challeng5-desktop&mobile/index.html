@@ -21,11 +21,11 @@
                     <div class="nav-menu" id="nav-menu">
                       
                         <ul class="nav menu">
-                          <li class="nav-item"><a onclick="changeBackground()" class="nav-link active" href="#">WHAT WE DO</a></li>
-                          <li class="nav-item"><a  class="nav-link" href="#">RESEARCH</a></li>
-                          <li class="nav-item"><a  class="nav-link" href="#">EVENTS</a></li>
-                          <li class="nav-item"><a  class="nav-link" href="#">TAKE ACTION</a></li>
-                          <li class="nav-item"><a  class="nav-link" href="#">REPORTS</a></li>
+                          <li class="nav-item"><a onclick="changeBackground('./images/bailey.jpg')" class="nav-link active" href="#">WHAT WE DO</a></li>
+                          <li class="nav-item"><a onclick="changeBackground('./images/eye.jpg')" class="nav-link" href="#">RESEARCH</a></li>
+                          <li class="nav-item"><a onclick="changeBackground('./images/bailey.jpg')" class="nav-link" href="#">EVENTS</a></li>
+                          <li class="nav-item"><a onclick="changeBackground('./images/eye.jpg')" class="nav-link" href="#">TAKE ACTION</a></li>
+                          <li class="nav-item"><a onclick="changeBackground('./images/bailey.jpg')" class="nav-link" href="#">REPORTS</a></li>
                         </ul>
                         <button class="donate">DONATE TO A CHILD</button>
                     </div>
@@ -93,18 +93,8 @@
         </div>
     </section>
     <script>
-        function changeBackground(){ 
-            var bg1 =  document.getElementById("header");
-            console.log(bg1);
-            var bg2 = window.getComputedStyle(bg1).backgroundImage;
-            console.log(bg2);
-            if(bg2 === "url('../images/eye-for-ebony-OWi1sIWiCAI-unsplash.jpg')"){  
-                document.getElementById("header").backgroundImage =  "url('../images/bailey-torres-lt-JRmS3VrU-unsplash.jpg')" ;
-                console.log(document.getElementById("header").backgroundImage);
-             } else{
-            document.getElementById("header").backgroundImage =  "url('../images/eye-for-ebony-OWi1sIWiCAI-unsplash.jpg'))"   ;
-            console.log(document.getElementById("header").backgroundImage);
-            }
+        function changeBackground(urlTranfer){ 
+            document.getElementById('header').style.backgroundImage = "url("+urlTranfer+")";
         }
     </script>
 </body>
