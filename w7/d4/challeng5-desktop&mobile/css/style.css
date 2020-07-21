@@ -9,16 +9,17 @@ a, p, h1, h3 {
 body{
     margin: 0;
 }
-header{
-    background: url('../images/eye-for-ebony-OWi1sIWiCAI-unsplash.jpg') no-repeat, url('../images/bailey-torres-lt-JRmS3VrU-unsplash.jpg');
+#header{ 
     background-size: cover;
     z-index: 1;
     background-position: center;
     padding: 35px 0;
+    background-image: url('../images/eye-for-ebony-OWi1sIWiCAI-unsplash.jpg'), url('../images/bailey-torres-lt-JRmS3VrU-unsplash.jpg');
+    background-repeat: none;
 }
 :focus, :active{
     outline: none;
-    opacity: 0.6;
+   
 }
 #mainNav{
     z-index: 2;
@@ -322,7 +323,7 @@ div#nav-menu{
  
  /* End Style menu-mobile */
 @media (max-width: 575.98px) { 
-    header{
+    #header{
         padding: 40px 24px;
     }
     
