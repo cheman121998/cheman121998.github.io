@@ -56,6 +56,12 @@ nav .container{
 a.active, a:hover, a:active{
     opacity: 1;
 }
+a.active, .nav-link:hover{
+    opacity: 1;
+    background-color: #666;
+    color: white;
+}
+
 .nav-link{
     font-weight: 500;
     font-size: 14px;

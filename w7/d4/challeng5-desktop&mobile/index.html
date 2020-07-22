@@ -20,7 +20,7 @@
                     <label class="menu-icon" for="check"><span class="navicon"></span></label>
                     <div class="nav-menu" id="nav-menu">
                       
-                        <ul class="nav menu">
+                        <ul class="nav menu" id="menu">
                           <li class="nav-item"><a onclick="changeBackground('./images/bailey.jpg')" class="nav-link active" href="#">WHAT WE DO</a></li>
                           <li class="nav-item"><a onclick="changeBackground('./images/eye.jpg')" class="nav-link" href="#">RESEARCH</a></li>
                           <li class="nav-item"><a onclick="changeBackground('./images/bailey.jpg')" class="nav-link" href="#">EVENTS</a></li>
@@ -95,6 +95,18 @@
     <script>
         function changeBackground(urlTranfer){ 
             document.getElementById('header').style.backgroundImage = "url("+urlTranfer+")";
+        }
+    </script>
+    <script>
+       
+        var menu = document.getElementById("menu");
+        var links = menu.getElementsByClassName("nav-link");
+        for (var i = 0; i < links.length; i++) {
+          links[i].addEventListener("click", function() {
+          var currentLink = document.getElementsByClassName("active");
+          currentLink[0].className = currentLink[0].className.replace(" active", "");
+          this.className += " active";
+          });
         }
     </script>
 </body>
