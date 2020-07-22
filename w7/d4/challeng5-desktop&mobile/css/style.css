@@ -20,7 +20,9 @@ body{
 :focus, :active{
     outline: none;
     color: orange;
+    opacity: 1;
 }
+
 #mainNav{
     z-index: 2;
 }
@@ -50,9 +52,8 @@ nav .container{
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);;
 }
-a.active, a:hover{
-    opacity: 0.4;
-    
+a.active, a:hover, a:active{
+    opacity: 1;
 }
 .nav-link{
     font-weight: 500;
@@ -63,6 +64,7 @@ a.active, a:hover{
     margin-top: -1px;
     position: relative;
     text-decoration: none;
+    opacity: 0.6;
 }
 a.logo img {
     width: 96px;
@@ -103,7 +105,7 @@ a.logo img:hover {
     padding: 0.5rem 1rem;
 }
 .nav-menu ul li:hover {
-    opacity: 0.6;
+    opacity: 1;
 }
 div#nav-menu {
     display: flex;
@@ -305,25 +307,9 @@ button.more:hover{
 div#nav-menu{
     display: flex;
 }
-/* .menu-btn:checked ~ div#nav-menu {
-    display: block;
-}
-.menu-btn:checked ~ .menu-icon .navicon {
-    background: transparent;
-  }
-  .menu-btn:checked ~ .menu-icon .navicon:before {
-    transform: rotate(-45deg);
-  }
-  .menu-btn:checked ~ .menu-icon .navicon:after {
-    transform: rotate(45deg);
-  }
-  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-    top: 0;
-  } */
- 
- /* End Style menu-mobile */
+
 @media (max-width: 575.98px) { 
+    
     #header{
         padding: 40px 24px;
     }
