@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Poppins:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Challenge 6 - Farming</title>
+</head>
+<body>
+    <header class="masthead" id="header"> 
+        <div class="mask-cover"></div>
+        <div class="header-content">
+            <nav id="mainNav">
+                <div class="container">
+                    <a class="logo"><img src="./images/black@2x.png" alt="logo"></a>
+                    <input class="menu-btn" type="checkbox" id="check" />
+                    <label class="menu-icon" for="check"><span class="navicon"></span></label>
+                    <div class="nav-menu" id="nav-menu">
+                        <ul class="nav menu" id="menu">
+                          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">Who We Are</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">Impacts</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        </ul>
+                            <button class="login">Login</button>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="intro-text">
+                    <div class="txt-agriculture">AGRICULTURE FOR EVERYONE</div>
+                    <h1>An online agricultural platform aimed at teaching best agricultural practices to farmers everywhere.</h1>
+                    <div class="btn-group">
+                        <div>
+                            <button class="sign-up">Sign Up</button>
+                            <button class="watch">Watch our tutorials</button>
+                        </div>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span> 
+                            <span class="dot" onclick="currentSlide(2)"></span> 
+                            <span class="dot" onclick="currentSlide(3)"></span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <section id="farm">
+        <div class="container">
+            <h2>ABOUT ZOJIE'S FARM</h2>
+            <p>We are constantly in search for innovative solutions that makes the farmers lives easier while increasing their opportunities. 
+                We achieve these in various ways - reducing their production costs, increasing their harvest volumes and providing a better, 
+                bigger and more sustainable market for them.</p>
+        </div>
+    </section>
+    <section id="tool">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="./images/farmer (1).svg" alt="">
+                    <h4>inputs</h4>
+                    <div>Delivering best input deals to farmers’ communities</div>
+                </div>
+                <div class="col-3">
+                   
+                    <img src="./images/tractor (1).svg" alt="">
+                    <h4>tractor</h4>
+                    <div>Get services within 48 hours of request.</div>
+                </div>
+                <div class="col-3">
+                    <img src="./images/shopping-bag (1).svg" alt="">
+                    <h4>trading</h4>
+                    <div>Opening international markets for smallholder farmers.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
