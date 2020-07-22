@@ -56,7 +56,7 @@ a.active, a:hover, a:active{
 }
 a.active, .nav-link:hover{
     opacity: 1;
-    color: white;
+    color: orange;
 }
 
 .nav-link{
@@ -68,7 +68,7 @@ a.active, .nav-link:hover{
     margin-top: -1px;
     position: relative;
     text-decoration: none;
-    opacity: 0.5;
+  s
 }
 a.logo img {
     width: 96px;
@@ -236,7 +236,6 @@ button.more:hover{
     margin-top: 34px;
 }
 .our-children button:hover{
-    opacity: 0.8;
     color: #ffffff;
 }
 .scholarships button{
