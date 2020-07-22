@@ -19,9 +19,7 @@ body{
 }
 :focus{
     outline: none;
-    color: orange;
     opacity: 1;
-    background-color: grey;
 }
 
 #mainNav{
@@ -58,7 +56,6 @@ a.active, a:hover, a:active{
 }
 a.active, .nav-link:hover{
     opacity: 1;
-    background-color: #666;
     color: white;
 }
 
@@ -71,7 +68,7 @@ a.active, .nav-link:hover{
     margin-top: -1px;
     position: relative;
     text-decoration: none;
-    opacity: 0.6;
+    opacity: 0.5;
 }
 a.logo img {
     width: 96px;
