@@ -20,6 +20,7 @@ nav{
     position: fixed;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 #check{
     display: none;
@@ -42,16 +43,18 @@ nav .container{
     align-items: center;
     justify-content: space-between;
 }
-.masthead{
+.masthead, .masthead > div{
     position: relative;
 }
+
 .mask-cover{
-    position: absolute;
+    position: absolute!important;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 .dot {
     cursor: pointer;
@@ -136,6 +139,7 @@ button.login:hover{
     justify-content: space-around;
     align-items: center;
     height: 100vh;
+    z-index: 1;
 }
 
 .txt-agriculture{
@@ -208,6 +212,7 @@ text-align: justify;
     position: absolute;
     display: flex;
     top: -120px;
+    margin-bottom: 100px;
 }
 #tool .row .col-3 {
     text-align: center;
@@ -216,9 +221,13 @@ text-align: justify;
     height: 250px;
     width: 25%;
     margin-right: 30px;
+    transition: transform .2s;
+}
+#tool .row .col-3:last-child{
+    margin-right: 0;
 }
 #tool .row .col-3:hover{
-    zoom: 1;
+    transform: scale(1.1);
 }
 #tool h4{
     font-size: 20px;
@@ -234,4 +243,7 @@ text-align: justify;
     display: flex;
     flex: 1;
     justify-content: center;
+}
+.img-tool{
+    animation: ;
 }
