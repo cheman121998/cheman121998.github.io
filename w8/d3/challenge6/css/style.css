@@ -20,7 +20,7 @@ nav{
     position: fixed;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 100;
 }
 #check{
     display: none;
@@ -81,7 +81,7 @@ nav .container{
     text-decoration: none;
 }
 .nav-link:hover, .active{
-    opacity: 0.4;
+    color: #E8991D;
 }
 a.logo img {
     width: 96px;
@@ -243,7 +243,4 @@ text-align: justify;
     display: flex;
     flex: 1;
     justify-content: center;
-}
-.img-tool{
-    animation: ;
 }
