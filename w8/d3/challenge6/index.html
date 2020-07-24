@@ -14,8 +14,6 @@
             <nav id="mainNav">
                 <div class="container">
                     <a class="logo"><img src="./images/black@2x.png" alt="logo"></a>
-                    <input class="menu-btn" type="checkbox" id="check" />
-                    <label class="menu-icon" for="check"><span class="navicon"></span></label>
                     <div class="nav-menu" id="nav-menu">
                         <ul class="nav menu" id="menu">
                           <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
@@ -24,7 +22,9 @@
                           <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
                           <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                         </ul>
-                            <button class="login">Login</button>
+                        <button class="login">Login</button>
+                        
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsiveMenu()">&#9776;</a>
                     </div>
                 </div>
             </nav>
@@ -85,6 +85,16 @@
           activeNow[0].className = activeNow[0].className.replace(" active", "");
           this.className += " active";
           });
+        }
+
+        function responsiveMenu() {
+            var  getNav= document.getElementById("nav-menu");
+            console.log(getNav);
+            if (getNav.className === "nav-menu") {
+            getNav.className += " responsive";
+            } else {
+            getNav.className = "nav-menu";
+            }
         }
         </script>
 </body>
