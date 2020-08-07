@@ -133,22 +133,18 @@ button.login:hover{
     opacity: 0.6;
 }
 .intro-text{
-    /* display: grid;
-    grid-template-rows: 40% 30% 30%;
-    justify-content: space-around;
-    align-items: center; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
     height: 100vh;
     z-index: 1;
 }
-.header-content > .text-header{
-    display: flex;
-    flex-direction: column;
-    
-}
+
 .text-header{
     display: flex;
     flex: 1;
     justify-content: center;
+    flex-direction: column;
 }
 .txt-agriculture{
     font-size: 16px;
@@ -160,6 +156,7 @@ button.login:hover{
     font-weight: bold;
     color: white;
     width: 80%;
+    margin-bottom: 60px;
 }
 button.sign-up {
     border: none;
@@ -268,6 +265,7 @@ text-align: justify;
    
     #tool .row{
         display: block;
+        top: -200px;
     }
     #tool .row .col-3{
         margin-right: 0;
@@ -276,7 +274,7 @@ text-align: justify;
        
     }
     .intro-text{
-        height: 70vh;
+        height: 100vh;
     }
     .intro-text h1 {
         font-size: 26px;
