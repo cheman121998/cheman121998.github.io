@@ -12,8 +12,11 @@ body{
 .header-content{ 
     background-size: cover;
     background-position: center;
-    background-image: url('../images/eduardo-prim-377966-unsplash.jpg');
+    background-image: url('../images/eduardo.jpg');
     background-repeat: none;
+}
+.dot:hover{
+    animation: mymove 5s infinite;
 }
 nav{
     background: white;
@@ -130,14 +133,23 @@ button.login:hover{
     opacity: 0.6;
 }
 .intro-text{
-    display: grid;
+    /* display: grid;
     grid-template-rows: 40% 30% 30%;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; */
     height: 100vh;
     z-index: 1;
 }
-
+.header-content > .text-header{
+    display: flex;
+    flex-direction: column;
+    
+}
+.text-header{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
 .txt-agriculture{
     font-size: 16px;
     opacity: 0.8;
@@ -171,7 +183,7 @@ button.sign-up:hover{
 button.watch {
     width: 286px;
     height: 52px;
-    border: 3px solid #707070;
+    border: 3px solid #ffffff;
     background: transparent;
     border-radius: 26px;
     color: white;
@@ -218,6 +230,8 @@ text-align: justify;
     width: 25%;
     margin-right: 30px;
     transition: transform .2s;
+    background: #ffffff;
+    font-size: 20px;
 }
 #tool .row .col-3:last-child{
     margin-right: 0;
@@ -235,11 +249,7 @@ text-align: justify;
     align-items: center;
     justify-content: space-between;
 }
-.text-header{
-    display: flex;
-    flex: 1;
-    justify-content: center;
-}
+
 
 @media (max-width: 575.98px) { 
     .container{
@@ -263,6 +273,7 @@ text-align: justify;
         margin-right: 0;
         width: auto;
         margin: 30px 0;
+       
     }
     .intro-text{
         height: 70vh;

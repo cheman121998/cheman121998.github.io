@@ -10,7 +10,7 @@
 <body>
     <header class="masthead" id="header"> 
         <div class="mask-cover"></div>
-        <div class="header-content">
+        <div class="header-content" id="header-content">
             <nav id="mainNav">
                 <div class="container">
                     <a class="logo"><img src="./images/black@2x.png" alt="logo"></a>
@@ -38,10 +38,10 @@
                             <span><button class="watch">Watch our tutorials</button></span>
                         </div>
                         <div style="text-align:center">
-                            <span class="dot" onclick="currentSlide(1)"></span> 
-                            <span class="dot" onclick="currentSlide(2)"></span> 
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                            <span class="dot" onclick="currentSlide(4)"></span> 
+                            <span class="dot" onclick="changeBackground('./images/eduardo.jpg')"></span> 
+                            <span class="dot" onclick="changeBackground('./images/eye.jpg')"></span> 
+                            <span class="dot" onclick="changeBackground('./images/eduardo.jpg')"></span>
+                            <span class="dot" onclick="changeBackground('./images/eye.jpg')"></span> 
                         </div>
                     </div>
                 </div>
@@ -96,6 +96,11 @@
             getNav.className = "nav-menu";
             }
         }
+        </script>
+        <script>
+            function changeBackground(urlTranfer){ 
+                document.getElementById('header-content').style.backgroundImage = "url("+urlTranfer+")";
+            }
         </script>
 </body>
 </html>
