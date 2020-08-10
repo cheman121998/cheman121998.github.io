@@ -87,6 +87,9 @@ nav .container{
 .nav-link:hover, .active{
     color: #E8991D;
 }
+a.logo{
+    display: flex;
+}
 a.logo img {
     width: 96px;
     height: 34px;
@@ -252,6 +255,9 @@ text-align: justify;
     .container{
         padding-left: 40px;
         padding-right: 40px;
+    }
+    #mainNav .container{
+        height: 50px;
     }
     ul#menu{
         display: none;
