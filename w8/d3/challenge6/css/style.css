@@ -9,6 +9,9 @@ a, p {
 body{
     margin: 0;
 }
+*{
+    box-sizing: border-box;
+}
 .header-content{ 
     background-size: cover;
     background-position: center;
@@ -198,7 +201,7 @@ button.watch:hover{
 #farm {
     display: flex;
     padding-top: 10%;
-    height:70vh;
+    height: 90vh;
     background-color: #DEE9C2;
     margin: 0;
     position: relative;
@@ -219,15 +222,14 @@ text-align: justify;
 #tool .row{
     position: absolute;
     display: flex;
-    top: -140px;
+    top: -100px;
     margin-bottom: 100px;
 }
 #tool .row .col-3 {
     text-align: center;
     padding: 24px 32px;
     box-shadow: 2px 2px 6px #707070;
-    height: 250px;
-    width: 25%;
+    width: 30%;
     margin-right: 30px;
     transition: transform .2s;
     background: #ffffff;
@@ -257,7 +259,7 @@ text-align: justify;
         padding-right: 40px;
     }
     #mainNav .container{
-        height: 50px;
+        padding: 10px 40px;
     }
     ul#menu{
         display: none;
@@ -276,9 +278,16 @@ text-align: justify;
     #tool .row .col-3{
         margin-right: 0;
         width: auto;
-        margin: 30px 0;
+        margin: 30px 40px;
        
     }
+    #tool .row .col-3:last-child{
+        margin-right: 40px;
+    }
+    #tool .row .col-3 div{
+        font-size: 18px;
+    }
+
     .intro-text{
         height: 100vh;
     }
@@ -374,6 +383,7 @@ text-align: justify;
     #tool .row .col-3 div {
         overflow: hidden;
         height: 80px;
+        font-size: 14px;
     }
     #tool .row .col-3 h4{
         margin: 10px auto;
