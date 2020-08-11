@@ -8,6 +8,108 @@
     <title>Challenge 7</title>
 </head>
 <body>
-    
+    <div id = "root">
+        <div class="left-side">
+            <div class="container">
+                <div class="img-logo">
+                    <a href="#"><img src="./images/Mask Group 1@2x.png" alt="logo"></a>
+                </div>
+                <div class="sub-menu"> 
+                    <span>Menu</span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="mask-cover"></div>
+            <div class="container">
+                <div class="menu">
+                    <div>
+                        <ul class="nav" id="menu">
+                            <li class="nav-item"><a class="nav-link active" href="#">BUSH MEAT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">NIGERIAN</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">TOP RATED</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">CHEF CHOICE</a></li>
+                            <div>
+                                <button>
+                                    <img src="./images/menu.svg" alt="menu">
+                                </button>
+                            </div>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="txt-intro">
+                    <div class="intro-heading">
+                        <span> Explore <br>  from the <br>chef's menu</span>
+                    </div>
+                    <div class="intro-lead-in">
+                        <span>Where food meets man</span>
+                    </div>
+                </div>
+                <div class="group-card">
+                    <div class="order"><button>Order Meal</button></div>
+                    <div class="slider">
+                        <div class="card">
+                            <div class="mask-cover-item"></div>
+                                <img src="./images/slider3.jpg" alt="meal">
+                                <div class="card-intro">
+                                    <div class="card-heading">Chef choice</div>
+                                    <div class="card-title">Vegetable <br>Delicacy</div>
+                                    <div class="txt-order">
+                                        <div>Order Meal</div> 
+                                        <div><a href="#"><img src="./images/down-arrow.svg" alt="Next"></a></div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="card">
+                            <div class="mask-cover-item"></div>
+                            <img src="./images/slider2.jpg" alt="meal">
+                            <div class="card-intro">
+                                <div class="card-heading">Top Rated</div>
+                                <div class="card-title">Swedish<br> Potatoes</div>
+                                <div class="txt-order">
+                                    <div>Order Meal</div> 
+                                    <div><a href="#"><img src="./images/down-arrow.svg" alt="Next"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="mask-cover-item"></div>
+                            <img src="./images/slider1.jpg" alt="meal">
+                            <div class="card-intro">
+                                <div class="card-heading">New Menu</div>
+                                <div class="card-title">American <br> Breakfast</div>
+                                <div class="txt-order">
+                                    <div>Order Meal</div> 
+                                    <div><a href="#"><img src="./images/down-arrow.svg" alt="Next"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-next">
+                            <button>
+                                <img src="./images/down-arrow.svg" alt="Next">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var menu = document.getElementById("menu");
+        var links = menu.getElementsByClassName("nav-link");
+        for (var i = 0; i < links.length; i++) {
+          links[i].addEventListener("click", function() {
+          var currentLink = document.getElementsByClassName("active");
+          currentLink[0].className = currentLink[0].className.replace(" active", "");
+          this.className += " active";
+          });
+        }
+    </script>
 </body>
 </html>

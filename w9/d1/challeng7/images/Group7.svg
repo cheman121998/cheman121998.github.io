@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="75.486" height="16" viewBox="0 0 75.486 16">
+  <g id="Group_7" data-name="Group 7" transform="translate(-726 -680)">
+    <text id="Order_Meal" data-name="Order Meal" transform="translate(726 693)" fill="#fff" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Order Meal</tspan></text>
+    <g id="down-arrow" transform="translate(801.486 684.094) rotate(90)">
+      <path id="Path_56" data-name="Path 56" d="M9.987,5.294a.357.357,0,0,1-.5,0L5.05.852.608,5.294a.356.356,0,0,1-.5-.5L4.789.1A.348.348,0,0,1,5.041,0a.363.363,0,0,1,.252.1L9.979,4.789A.349.349,0,0,1,9.987,5.294Z" transform="translate(0)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
