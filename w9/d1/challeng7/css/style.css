@@ -296,7 +296,7 @@ li.nav-item {
 }
 
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 576px){
   .container{
     padding-left: 26px;
     padding-right: 26px;
@@ -333,12 +333,11 @@ li.nav-item {
  }
 
 
-@media (min-width: 768px) and (max-width: 991.98px) { 
-  .card {
-    width: 50%;
-    position: relative;
-    /* margin-left: 1rem; */
-    margin-right: 1rem;
+@media (min-width: 768px){ 
+.card {
+  width: 50%;
+  position: relative;
+  margin-right: 1rem;
 }
 a.nav-link{
   display: none;
@@ -346,10 +345,13 @@ a.nav-link{
 .group-card {
   display: contents;
 }
+body{
+  display: none;
+}
 }
 
 
-@media (min-width: 992px) and (max-width: 1199.98px) { 
+@media (min-width: 992px){ 
 
 }
 

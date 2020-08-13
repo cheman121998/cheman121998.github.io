@@ -20,10 +20,10 @@
                 </div>
                 <div class="sub-menu">
                     
-                    <span onclick="changeBackground('./images/bg1.jpg')" class="dot"></span>
-                    <span onclick="changeBackground('./images/bg2.jpg')" class="dot"></span>
-                    <span onclick="changeBackground('./images/bg3.jpg')" class="dot"></span>
-                    <span onclick="changeBackground('./images/bg2.jpg')" class="dot"></span>
+                    <span onclick="changeBackground('./images/bg1.jpg', '<span> Explore <br> from the <br>chef\'s menu</span>')" class="dot"></span>
+                    <span onclick="changeBackground('./images/bg2.jpg', '<span> Enjoy <br> Vegetable <br> Delicacy </span>')" class="dot"></span>
+                    <span onclick="changeBackground('./images/bg3.jpg', '<span> Enjoy <br> American <br> Breakfast </span>')" class="dot"></span>
+                    <span onclick="changeBackground('./images/bg2.jpg', '<span> Explore <br> from the <br>chef\'s menu</span>')" class="dot"></span>
                     <span class="sub-menu-txt">Menu</span>
                 </div>
             </div>
@@ -46,7 +46,7 @@
                             </div>
                         </ul>
                     </div>
-
+                    
                 </div>
                 <div class="txt-intro">
                     <div class="intro-heading">
@@ -126,19 +126,26 @@
     </script>
     <script>
         function closeMenu() {
-            var close = document.getElementsByClassName("nav-item");
+            
+            var iconMenu = document.getElementsByClassName("menuIcon");
+            var xMenu = document.getElementsByClassName("xIcon");
+            if(iconMenu[0].style.display == "block"){
+                var close = document.getElementsByClassName("nav-item");
+            var count = document.getElementsByClassName("nav-item").length;
+            var i;
+            for (i = 0; i < count; i++) {
+            close[i].style.display="block";
+            }
+                iconMenu[0].style.display = "none";
+                xMenu[0].style.display = "block";
+            }
+            else{
+                var close = document.getElementsByClassName("nav-item");
             var count = document.getElementsByClassName("nav-item").length;
             var i;
             for (i = 0; i < count; i++) {
             close[i].style.display="none";
             }
-            var iconMenu = document.getElementsByClassName("menuIcon");
-            var xMenu = document.getElementsByClassName("xIcon");
-            if(iconMenu[0].style.display == "block"){
-                iconMenu[0].style.display = "none";
-                xMenu[0].style.display = "block";
-            }
-            else{
                 iconMenu[0].style.display = "block";
                 xMenu[0].style.display = "none";
             }
@@ -191,7 +198,7 @@
      <script>
         function changeBackground(urlTranfer, text){ 
             document.getElementById('right-side').style.backgroundImage = "url("+urlTranfer+")";
-           
+            document.querySelector('.intro-heading').innerHTML = text;
         }
     </script>
 </body>
