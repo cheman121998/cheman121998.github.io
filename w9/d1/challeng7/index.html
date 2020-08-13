@@ -19,11 +19,12 @@
                     <a href="#"><img src="./images/Mask Group 1@2x.png" alt="logo"></a>
                 </div>
                 <div class="sub-menu">
-                    <span style="color: white;">Menu</span>
+                    
                     <span onclick="changeBackground('./images/bg1.jpg')" class="dot"></span>
                     <span onclick="changeBackground('./images/bg2.jpg')" class="dot"></span>
                     <span onclick="changeBackground('./images/bg3.jpg')" class="dot"></span>
                     <span onclick="changeBackground('./images/bg2.jpg')" class="dot"></span>
+                    <span class="sub-menu-txt">Menu</span>
                 </div>
             </div>
         </div>
@@ -60,7 +61,7 @@
                     <div class="slider">
                         <div class="card">
                             <div class="mask-cover-item"></div>
-                            <div>
+                            <div class="card-content">
                                 <img src="./images/slider3.jpg" alt="meal">
                                 <div class="card-intro">
                                     <div class="card-heading">Chef choice</div>
@@ -74,7 +75,7 @@
                         </div>
                         <div class="card">
                             <div class="mask-cover-item"></div>
-                            <div>
+                            <div class="card-content">
                                 <img src="./images/slider2.jpg" alt="meal">
                                 <div class="card-intro">
                                     <div class="card-heading">Top Rated</div>
@@ -88,7 +89,7 @@
                         </div>
                         <div class="card">
                             <div class="mask-cover-item"></div>
-                            <div>
+                            <div class="card-content">
                                 <img src="./images/slider1.jpg" alt="meal">
                                 <div class="card-intro">
                                     <div class="card-heading">New Menu</div>
@@ -125,7 +126,6 @@
     </script>
     <script>
         function closeMenu() {
-
             var close = document.getElementsByClassName("nav-item");
             var count = document.getElementsByClassName("nav-item").length;
             var i;
@@ -134,8 +134,14 @@
             }
             var iconMenu = document.getElementsByClassName("menuIcon");
             var xMenu = document.getElementsByClassName("xIcon");
-            iconMenu[0].style.display="block";
-            xMenu[0].style.display="none";
+            if(iconMenu[0].style.display == "block"){
+                iconMenu[0].style.display = "none";
+                xMenu[0].style.display = "block";
+            }
+            else{
+                iconMenu[0].style.display = "block";
+                xMenu[0].style.display = "none";
+            }
         }
     </script>
     <script>
