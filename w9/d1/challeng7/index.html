@@ -145,7 +145,7 @@
         }
     </script>
     <script>
-        var numOfSlideShowed = window.innerWidth > 600 ? 3 : 1;
+        var numOfSlideShowed = window.innerWidth > 800 ? 3 :  window.innerWidth > 599 ? 2 : 1;
         var showedIndexs = Array.from(Array(numOfSlideShowed).keys());
         var slides = document.getElementsByClassName("card");
         showSlides(showedIndexs);

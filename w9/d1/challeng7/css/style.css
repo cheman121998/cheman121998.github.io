@@ -286,13 +286,44 @@ li.nav-item {
 .card-title {
   font-size: 32px;
 }
-
+.intro-heading {
+  font-size: 50px;
+}
 
 }
 
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-
+  .container{
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+   .group-card {
+    display: contents;
+   }
+  .nav-item{
+    display: none;
+  }
+  .slider{
+    justify-content: left;
+  }
+  .card {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+  .order{
+    margin: 3em 0;
+  }
+  .btn-next button {
+    margin-top: 2em;
+  }
+  .card-title {
+    font-size: 22px;
+  }
+  .intro-heading {
+    font-size: 50px;
+  }
  }
 
 
