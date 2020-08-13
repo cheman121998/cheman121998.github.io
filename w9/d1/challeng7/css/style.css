@@ -287,8 +287,11 @@ li.nav-item {
   font-size: 32px;
 }
 .intro-heading {
-  font-size: 50px;
+  font-size: 42px;
 }
+.left-side .img-logo img {
+  width: 38px;
+  height: 38px;
 
 }
 
@@ -301,7 +304,7 @@ li.nav-item {
    .group-card {
     display: contents;
    }
-  .nav-item{
+  a.nav-link{
     display: none;
   }
   .slider{
@@ -322,13 +325,27 @@ li.nav-item {
     font-size: 22px;
   }
   .intro-heading {
-    font-size: 50px;
+    font-size: 48px;
   }
+  .left-side .img-logo img {
+    width: 38px;
+    height: 38px;
  }
 
 
 @media (min-width: 768px) and (max-width: 991.98px) { 
-
+  .card {
+    width: 50%;
+    position: relative;
+    /* margin-left: 1rem; */
+    margin-right: 1rem;
+}
+a.nav-link{
+  display: none;
+}
+.group-card {
+  display: contents;
+}
 }
 
 
