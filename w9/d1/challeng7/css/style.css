@@ -68,8 +68,8 @@ body {
 
 .left-side {
   background-color: #EF9F01;
-  text-align: center;
   z-index: 3;
+  text-align: center;
 }
 .left-side .sub-menu .sub-menu-txt{
   color: white;
@@ -109,8 +109,8 @@ body {
   grid-template-rows: 50% 50%;
   justify-content: space-between;
   height: 100vh; */
-  /* padding-left: 0;
-  padding-right: 0; */
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .left-side .sub-menu {
@@ -131,6 +131,7 @@ ul.nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  height: 30px;
 }
 
 a.nav-link {
@@ -235,7 +236,6 @@ li.nav-item {
   margin-top: 24px;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .txt-order img {
@@ -259,15 +259,34 @@ li.nav-item {
 }
 
 @media (max-width: 575.98px) { 
- #root{
-   display: block;
- }
+.container{
+  padding-left: 16px;
+  padding-right: 16px;
+}
  .group-card {
-  display: block;
+  display: contents;
  }
- .slider {
-   justify-content: center;
- }
+.nav-item{
+  display: none;
+}
+.slider{
+  justify-content: left;
+}
+.card {
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0;
+}
+.order{
+  margin: 3em 0;
+}
+.btn-next button {
+  margin-top: 2em;
+}
+.card-title {
+  font-size: 32px;
+}
+
 
 }
 
