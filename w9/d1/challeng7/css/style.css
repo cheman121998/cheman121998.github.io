@@ -186,6 +186,11 @@ li.nav-item {
   position: relative;
   margin-left: 1rem;
   margin-right: 1rem;
+  box-shadow: 1px 1px 8px #888888;
+  cursor: pointer;
+}
+.card:hover{
+  transform: scale3d(1.1, 1.1, 1.1);
 }
 
 .card-intro {
@@ -413,5 +418,8 @@ li.nav-item {
 }
  a.nav-link {
     display: block;
+  }
+  .txt-order{
+    font-size: 12px;
   }
 }
