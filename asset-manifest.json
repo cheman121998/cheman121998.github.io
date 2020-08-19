@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/cheman121998/cheman121998.github.io/static/css/main.42b2e7ab.chunk.css",
+    "main.js": "/cheman121998/cheman121998.github.io/static/js/main.bef56f3d.chunk.js",
+    "main.js.map": "/cheman121998/cheman121998.github.io/static/js/main.bef56f3d.chunk.js.map",
+    "runtime-main.js": "/cheman121998/cheman121998.github.io/static/js/runtime-main.4574827a.js",
+    "runtime-main.js.map": "/cheman121998/cheman121998.github.io/static/js/runtime-main.4574827a.js.map",
+    "static/js/2.763b34e5.chunk.js": "/cheman121998/cheman121998.github.io/static/js/2.763b34e5.chunk.js",
+    "static/js/2.763b34e5.chunk.js.map": "/cheman121998/cheman121998.github.io/static/js/2.763b34e5.chunk.js.map",
+    "index.html": "/cheman121998/cheman121998.github.io/index.html",
+    "precache-manifest.c269b6d97bb69dc32d1e0a7a2da49e1c.js": "/cheman121998/cheman121998.github.io/precache-manifest.c269b6d97bb69dc32d1e0a7a2da49e1c.js",
+    "service-worker.js": "/cheman121998/cheman121998.github.io/service-worker.js",
+    "static/css/main.42b2e7ab.chunk.css.map": "/cheman121998/cheman121998.github.io/static/css/main.42b2e7ab.chunk.css.map",
+    "static/js/2.763b34e5.chunk.js.LICENSE.txt": "/cheman121998/cheman121998.github.io/static/js/2.763b34e5.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/cheman121998/cheman121998.github.io/static/media/bg1.e75d54a5.png",
+    "static/media/black.svg": "/cheman121998/cheman121998.github.io/static/media/black.0ed31c59.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4574827a.js",
+    "static/js/2.763b34e5.chunk.js",
+    "static/css/main.42b2e7ab.chunk.css",
+    "static/js/main.bef56f3d.chunk.js"
+  ]
+}
